@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.1//EN"
+	"http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="yb" extends="json-default" namespace="/yb">
+		<action name="chdj">
+			<result>/jsp/yb/bz/bzchdj.jsp</result>
+		</action>
+		<action name="bZChuHuo_*" class="bZChuHuoAction" method="{1}">
+			<result name="ok" type="json">
+				<param name="root">ok</param>
+			</result>
+			<result name="success" type="json">
+				<param name="root">result</param>
+			</result>
+		</action>
+		<action name="bz_pack">
+			<result>/jsp/yb/bz/pack.jsp</result>
+		</action>
+		<action name="pack_*" class="packAction_yb" method="{1}">
+			<result name="ok" type="json">
+				<param name="root">ok</param>
+			</result>
+			<result name="success" type="json">
+				<param name="root">result</param>
+			</result>
+		</action>
+		<action name="zj_dsdj">
+			<result>/jsp/yb/zj/duoshudj.jsp</result>
+		</action>
+		<action name="zj_*" class="zhiJianAction" method="{1}">
+			<result name="ok" type="json">
+				<param name="root">ok</param>
+			</result>
+			<result name="success" type="json">
+				<param name="root">result</param>
+			</result>
+		</action>
+		<action name="kt_bingx">
+			<result>/jsp/yb/kt/bingx.jsp</result>
+		</action>
+		<action name="kt_*" class="keTuiAction" method="{1}">
+			<result name="ok" type="json">
+				<param name="root">ok</param>
+			</result>
+			<result name="success" type="json">
+				<param name="root">result</param>
+			</result>
+		</action>
+	</package>
+</struts>

@@ -1,0 +1,39 @@
+body,h1,h2,h3,h4,h5,h6,div,dl,dt,ul,ol,li,pre,form,input,textarea,p{
+	padding:0;
+	margin: 0;
+}
+
+a {
+	text-decoration:none;
+}
+
+ol,ul,li {
+	list-style: none;
+}
+
+*{
+	font-family:"Microsoft YaHei";
+}
+
+#formtable input{
+	width:200px;
+}
+
+#formtable select{
+	width:200px;
+}
+
+#formtable .easyui-linkbutton {
+	width:60px;
+	height:30px;
+	
+}
+
+#formtable .easyui-linkbutton .l-btn-text{
+	font-size:17px;
+}
+
+#formtable {
+	line-height: 40px;
+}
+	

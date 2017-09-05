@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.1//EN"
+	"http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="main" extends="json-default" namespace="/">
+		<action name="login">
+			<result>/jsp/common/login/login.jsp</result>
+		</action>
+		<action name="add_user">
+			<result>/jsp/common/user/add_user.jsp</result>
+		</action>
+		<action name="add_department">
+			<result>/jsp/common/user/add_department.jsp</result>
+		</action>
+		<action name="add_role">
+			<result>/jsp/common/user/add_role.jsp</result>
+		</action>
+		
+		<action name="user_*" class="userAction" method="{1}">
+			<result name="login_success" type="redirectAction">main</result>
+			<result name="logout" type="redirectAction">login</result>
+			<result name="login_failure">/jsp/common/login/login.jsp</result>
+			<result name="ok" type="json">
+				<param name="root">ok</param>
+			</result>
+			<result name="success" type="json">
+				<param name="root">result</param>
+			</result>
+		</action>
+		<action name="department_*" class="departmentAction" method="{1}">
+			<result name="ok" type="json">
+				<param name="root">ok</param>
+			</result>
+			<result name="success" type="json">
+				<param name="root">result</param>
+			</result>
+		</action>
+		<action name="role_*" class="roleAction" method="{1}">
+			<result name="ok" type="json">
+				<param name="root">ok</param>
+			</result>
+			<result name="success" type="json">
+				<param name="root">result</param>
+			</result>
+		</action>
+		<action name="main" class="accordionAction" method="main">
+			<result name="main">/jsp/common/main/main.jsp</result>
+		</action>
+		<action name="getAuth" class="accordionAction" method="main">
+			<result name="main" type="json">
+				<param name="root">jo</param>
+			</result>
+		</action>
+	</package>
+</struts>

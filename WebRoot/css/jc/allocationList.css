@@ -1,0 +1,180 @@
+* {
+	font-family: "ºÚÌå";
+	font-size:14px;
+}
+
+.div_left {
+	position:relative;
+	width: 11.2cm;
+	height: 7cm;
+	float: left;
+	padding-left:10mm;
+}
+
+.div_right {
+	position:relative;
+	width: 11.2cm;
+	height: 7cm;
+	float: right;
+	padding-right:10mm;
+}
+
+.div_left .shortname {
+	position:absolute;
+	top: 1.2cm;
+	left: 2cm;
+}
+
+.div_left .div_second {
+	position:absolute;
+	top: 2cm;
+	width: 96%;
+}
+
+.div_left .descr {
+	float: left;
+	padding-left: 1cm;
+}
+
+.div_left .publisher {
+	float: right;
+	padding-right: 0.3cm;
+}
+
+.div_left .div_third {
+	position:absolute;
+	top: 3cm;
+	width: 96%;
+}
+
+.div_left .price {
+	float: left;
+	padding-left: 1.2cm;
+}
+
+.div_left .subcode {
+	float: right;
+	padding-right: 0.5cm;
+}
+
+.div_left .div_fouth {
+	position:absolute;
+	top: 3.8cm;
+	width: 96%;
+}
+
+.div_left .qty {
+	float: left;
+	padding-left: 1.2cm;
+}
+
+.div_left .caseqty {
+	float: left;
+	padding-left: 1.5cm;
+}
+
+.div_left .pack {
+	float: left;
+	padding-left: 1.5cm;
+}
+
+.div_left .odd {
+	float: right;
+	padding-right: 1cm;
+}
+
+.div_left .div_fifth {
+	position:absolute;
+	top: 5cm;
+	width: 96%;
+}
+
+.div_left .shipno {
+	float: left;
+	padding-left: 1.2cm;
+}
+
+.div_left .barcode {
+	float: left;
+	padding-left: 1cm;
+}
+
+.div_right .shortname {
+	position:absolute;
+	top: 1.2cm;
+	left: 2cm;
+}
+
+.div_right .div_second {
+	position:absolute;
+	top: 2cm;
+	width: 96%;
+}
+
+.div_right .descr {
+	float: left;
+	padding-left: 2cm;
+}
+
+.div_right .publisher {
+	float: right;
+	padding-right: 0;
+}
+
+.div_right .div_third {
+	position:absolute;
+	top: 3cm;
+	width: 96%;
+}
+
+.div_right .price {
+	float: left;
+	padding-left: 2.2cm;
+}
+
+.div_right .subcode {
+	float: right;
+	padding-right: 0;
+}
+
+.div_right .div_fouth {
+	position:absolute;
+	top: 3.8cm;
+	width: 96%;
+}
+
+.div_right .qty {
+	float: left;
+	padding-left: 2.2cm;
+}
+
+.div_right .caseqty {
+	float: left;
+	padding-left: 1.5cm;
+}
+
+.div_right .pack {
+	float: left;
+	padding-left: 1.5cm;
+}
+
+.div_right .odd {
+	float: right;
+	padding-right: 1cm;
+}
+
+.div_right .div_fifth {
+	position:absolute;
+	top: 5cm;
+	width: 96%;
+}
+
+.div_right .shipno {
+	float: left;
+	padding-left: 2.2cm;
+}
+
+.div_right .barcode {
+	float: left;
+	padding-left: 1cm;
+}

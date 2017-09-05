@@ -1,0 +1,25 @@
+#Tue Sep 05 10:39:02 CST 2017
+eclipse.preferences.version=1
+encoding//WebRoot/css/index.css=UTF-8
+encoding//WebRoot/css/index_bk.css=UTF-8
+encoding//WebRoot/css/jc/Copy\ (2)\ of\ s_ticket.css=UTF-8
+encoding//WebRoot/css/jc/main.css=UTF-8
+encoding//WebRoot/css/jc/predistribution.css=UTF-8
+encoding//WebRoot/css/jc/return_ticket.css=UTF-8
+encoding//WebRoot/css/jc/t_ticket.css=UTF-8
+encoding//WebRoot/css/shou.css=UTF-8
+encoding//WebRoot/js/bootstrap-datetimepicker.zh-CN.js=UTF-8
+encoding//WebRoot/js/index.js=UTF-8
+encoding//WebRoot/js/jc/login.js=UTF-8
+encoding//WebRoot/js/jc/main.js=UTF-8
+encoding//WebRoot/jsp/error/404.jsp=UTF-8
+encoding//WebRoot/jsp/error/500.jsp=UTF-8
+encoding//WebRoot/jsp/error/error.jsp=UTF-8
+encoding//WebRoot/jsp/jc/main/main.jsp=UTF-8
+encoding//WebRoot/jsp/wx/shoufa/shoushow.jsp=UTF-8
+encoding//WebRoot/jsp/wx/subscribe/subscribe.jsp=UTF-8
+encoding//src/com/jxxhwl/wx/entity/UserInfo.java=gbk
+encoding//src/com/jxxhwl/wx/test/TestLog.java=UTF-8
+encoding//src/com/jxxhwl/wx/util/WeiXinUtil.java=UTF-8
+encoding/<project>=UTF-8
+separateDerivedEncodings=true

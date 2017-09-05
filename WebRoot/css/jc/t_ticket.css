@@ -1,0 +1,51 @@
+*{
+	font-weight:bold;
+}
+
+.data{
+	font-family:"黑体";
+	width:76mm;
+	height:86mm;
+	margin-left:2mm;
+	/*margin:0px auto;*/
+}
+.d_subcode{
+	margin-top:5mm;
+	font-size:23px;
+	text-align:center;
+}
+.d_batchno{
+	margin-top:3mm;
+	font-size:24px;
+}
+.d_shipno{
+	margin-top:3mm;
+	font-size:24px;
+}
+.d_shipno_1{
+	margin-top:1mm;
+	margin-left:5mm;
+	font-size:30px;
+	font-family:Code39QuarterInchTT-Regular;
+	font-weight:normal;
+}
+.d_shortname{
+	margin-top:3mm;
+	font-size:24px;
+}
+.d_caseqty{
+	margin-top:3mm;
+	float:left;
+	margin-left:4mm;
+	font-size:24px;
+}
+.d_note{
+	margin-top:1mm;
+	float:right;
+	margin-right:2mm;
+}
+.d_buttom{
+	margin-top:5mm;
+	text-align:center;
+	clear:both;
+}

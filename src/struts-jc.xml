@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.1//EN"
+	"http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="jc" extends="json-default" namespace="/jc">
+<!-- 		<interceptors> -->
+<!-- 			<interceptor name="authority" class="authorityInterceptor"></interceptor> -->
+<!-- 			<interceptor-stack name="myinterceptorstack"> -->
+<!-- 				<interceptor-ref name="authority"></interceptor-ref> -->
+<!-- 				<interceptor-ref name="defaultStack"></interceptor-ref> -->
+<!-- 			</interceptor-stack> -->
+<!-- 		</interceptors> -->
+<!-- 		<default-interceptor-ref name="myinterceptorstack" /> -->
+<!-- 		<global-results> -->
+<!--             <result name="reLogin">/jsp/jc/login/login.jsp</result> -->
+<!--         </global-results> -->
+		<action name="login">
+			<result>/jsp/jc/login/login.jsp</result>
+		</action>
+		
+		<action name="user_*" class="userAction" method="{1}">
+			<result name="login_success" type="redirectAction">main</result>
+			<result name="login_failure">/jsp/jc/login/login.jsp</result>
+		</action>
+		<action name="main" class="accordionAction" method="main">
+			<result name="main">/jsp/jc/main/main.jsp</result>
+		</action>
+		<action name="storer">
+			<result>/jsp/jc/basicInfo/storer.jsp</result>
+		</action>
+		<action name="storer_*" class="storerAction" method="{1}">
+			<result name="success" type="json">
+				<param name="root">list</param>
+			</result>
+			<result name="info" type="json">
+				<param name="root">map</param>
+			</result>
+			<result name="queryInfo" type="json">
+				<param name="root">map</param>
+			</result>
+			<result name="save" type="json">
+				<param name="root">ok</param>
+			</result>
+			<result name="delete" type="json">
+				<param name="root">ok</param>
+			</result>
+			<result name="edit" type="json">
+				<param name="root">ok</param>
+			</result>
+		</action>
+		<action name="pack_*" class="packAction" method="{1}">
+			<result name="ok" type="json">
+				<param name="root">ok</param>
+			</result>
+			<result name="success" type="json">
+				<param name="root">result</param>
+			</result>
+		</action>
+		<action name="predistribution">
+			<result>/jsp/jc/business/predistribution.jsp</result>
+		</action>
+		<action name="inventoryDistribution">
+			<result>/jsp/jc/business/inventoryDistribution.jsp</result>
+		</action>
+		<action name="distribution_*" class="distributionAction" method="{1}">
+			<result name="success" type="json">
+				<param name="root">result</param>
+			</result>
+			<result name="ok" type="json">
+				<param name="root">ok</param>
+			</result>
+		</action>
+		<action name="issuenumber">
+			<result>/jsp/jc/basicInfo/issuenumber.jsp</result>
+		</action>
+		<action name="issuenumber_*" class="issuenumberAction" method="{1}">
+			<result name="info" type="json">
+				<param name="root">list</param>
+			</result>
+			<result name="save" type="json">
+				<param name="root">ok</param>
+			</result>
+			<result name="delete" type="json">
+				<param name="root">ok</param>
+			</result>
+			<result name="success" type="json">
+				<param name="root">result</param>
+			</result>
+		</action>
+		<action name="sku">
+			<result>/jsp/jc/basicInfo/sku.jsp</result>
+		</action>
+		<action name="returnSku">
+			<result>/jsp/jc/basicInfo/returnSku.jsp</result>
+		</action>
+		<action name="sku_*" class="skuAction" method="{1}">
+			<result name="ok" type="json">
+				<param name="root">ok</param>
+			</result>
+			<result name="info" type="json">
+				<param name="root">map</param>
+			</result>
+			<result name="save" type="json">
+				<param name="root">ok</param>
+			</result>
+			<result name="delete" type="json">
+				<param name="root">ok</param>
+			</result>
+			<result name="update" type="json">
+				<param name="root">ok</param>
+			</result>
+			<result name="query" type="json">
+				<param name="root">map</param>
+			</result>
+			<result name="queryByIssuenumberAndSubcode" type="json">
+				<param name="root">sku</param>
+			</result>
+			<result name="getSubcode" type="json">
+				<param name="root">list</param>
+			</result>
+		</action>
+		<action name="receipt">
+			<result>/jsp/jc/logistics/receipt.jsp</result>
+		</action>
+		<action name="receipt_*" class="receiptAction" method="{1}">
+			<result name="success" type="json">
+				<param name="root">result</param>
+			</result>
+			<result name="ok" type="json">
+				<param name="root">ok</param>
+			</result>
+		</action>
+		<action name="compute">
+			<result>/jsp/jc/logistics/compute.jsp</result>
+		</action>
+		<action name="compute_*" class="computeAction" method="{1}">
+			<result name="ok" type="json">
+				<param name="root">ok</param>
+			</result>
+			<result name="success" type="json">
+				<param name="root">result</param>
+			</result>
+		</action>
+		<action name="wholeShip">
+			<result>/jsp/jc/logistics/wholeShip.jsp</result>
+		</action>
+		<action name="wholeShip_*" class="wholeShipAction" method="{1}">
+			<result name="ok" type="json">
+				<param name="root">ok</param>
+			</result>
+			<result name="success" type="json">
+				<param name="root">result</param>
+			</result>
+		</action>
+		<action name="oddPick">
+			<result>/jsp/jc/logistics/oddPick.jsp</result>
+		</action>
+		<action name="oddPick_*" class="oddPickAction" method="{1}">
+			<result name="ok" type="json">
+				<param name="root">ok</param>
+			</result>
+			<result name="success" type="json">
+				<param name="root">result</param>
+			</result>
+		</action>
+		<action name="oddPack">
+			<result>/jsp/jc/logistics/oddPack.jsp</result>
+		</action>
+		<action name="oddPack_*" class="oddPackAction" method="{1}">
+			<result name="ok" type="json">
+				<param name="root">ok</param>
+			</result>
+			<result name="success" type="json">
+				<param name="root">result</param>
+			</result>
+		</action>
+		<action name="print">
+			<result>/jsp/jc/print/print.jsp</result>
+		</action>
+		<action name="print_*" class="printAction" method="{1}">
+			<result name="loadBatchno" type="json">
+				<param name="root">list</param>
+			</result>
+			<result name="loadPickno" type="json">
+				<param name="root">list</param>
+			</result>
+			<result name="wholeCaseListMid">/jsp/jc/print/wholeCaseList.jsp</result>
+			<result name="allocationList">/jsp/jc/print/allocationList.jsp</result>
+			<result name="s_ticketList">/jsp/jc/print/s_ticket.jsp</result>
+			<result name="t_ticketList">/jsp/jc/print/t_ticket.jsp</result>
+			<result name="oddCaseListMid">/jsp/jc/print/oddCaseList.jsp</result>
+			<result name="oddTicketList">/jsp/jc/print/oddTicket.jsp</result>
+			<result name="allocationListMid">/jsp/jc/print/allocationList.jsp</result>
+			<result name="returnTicketMid">/jsp/jc/print/return_ticket_print.jsp</result>
+			<result name="ok" type="json">
+				<param name="root">ok</param>
+			</result>
+			<result name="success" type="json">
+				<param name="root">result</param>
+			</result>
+			<result name="wholeCaseList" type="json">
+				<param name="root">map</param>
+			</result>
+			<result name="oddCaseList" type="json">
+				<param name="root">list</param>
+			</result>
+			<result name="pickMid">/jsp/jc/print/pick.jsp</result>
+			<result name="pick" type="json">
+				<param name="root">map</param>
+			</result>
+		</action>
+		<action name="orders">
+			<result>/jsp/jc/business/orders.jsp</result>
+		</action>
+		<action name="orders_*" class="ordersAction" method="{1}">
+			<result name="ok" type="json">
+				<param name="root">ok</param>
+			</result>
+			<result name="success" type="json">
+				<param name="root">result</param>
+			</result>
+		</action>
+		<action name="inventory_*" class="inventoryAction" method="{1}">
+			<result name="ok" type="json">
+				<param name="root">ok</param>
+			</result>
+			<result name="success" type="json">
+				<param name="root">result</param>
+			</result>
+		</action>
+		<action name="return_ticket">
+			<result>/jsp/jc/print/return_ticket.jsp</result>
+		</action>
+		<action name="cldengji">
+			<result>/jsp/jc/cl/chdj.jsp</result>
+		</action>
+		<action name="chanLiang_*" class="chanLiangAction" method="{1}">
+			<result name="ok" type="json">
+				<param name="root">ok</param>
+			</result>
+			<result name="success" type="json">
+				<param name="root">result</param>
+			</result>
+		</action>
+		<action name="productionPlan">
+			<result>/jsp/jc/productionPlan/productionPlan.jsp</result>
+		</action>
+		<action name="pp_*" class="productionPlanAction" method="{1}">
+			<result name="ok" type="json">
+				<param name="root">ok</param>
+			</result>
+			<result name="success" type="json">
+				<param name="root">result</param>
+			</result>
+		</action>
+	</package>
+</struts>
