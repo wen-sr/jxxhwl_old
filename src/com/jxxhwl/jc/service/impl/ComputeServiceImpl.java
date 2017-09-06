@@ -88,7 +88,7 @@ public class ComputeServiceImpl implements ComputeService{
 			if(!validateBasicInfo.isEnoughInventoryDetail(i)){
 				return "此捆扎的库存不足，无法计算";
 			}
-			
+			//改捆扎的库存足够则进行计算
 			if(inventoryDao.updateInventoryDetailChange(i, i.getQtyallocated(), 0) > 0){
 				if(computeDao.compute(d.getId()) > 0){
 					continue;
@@ -121,27 +121,35 @@ public class ComputeServiceImpl implements ComputeService{
 	 */
 	@Override
 	public String cancelCompute(String id) {
+		String msg = "";
 		String[] ids = id.split(",");
 		Distribution d = null;
 		for(String s : ids ){
 			d = computeDao.findById(s);
 			if(!"1".equals(d.getStatus())){
-				return d.getShortname() + "的 " + d.getQtyallocated() + " 不是计算完成状态，无法取消计算";
+				msg = d.getShortname() + "的 " + d.getQtyallocated() + " 册不是计算完成状态，无法取消计算，";
+				continue;
 			}
 			Inventory i = new Inventory(d.getIssuenumber(),d.getSubcode(),0, d.getQtyallocated(),d.getPack() );
+			//更新库存明细
 			if(inventoryDao.updateInventoryDetailChange(i, 0, d.getQtyallocated())>0){
-				if(computeDao.cancelCompute(s) > 0){
-					if(computeDao.updateDistribution(d.getComputeno(), d.getCode()) > 0){
-						continue;
-					}else{
-						return d.getShortname() + "的 " + d.getQtyallocated() + " 取消计算失败";
+				//更新JiaoCaiInventory与持一JiaoCaiInventory_detail保致
+				if(inventoryDao.updateInventoryFromInventoryDetail()>0){
+					if(computeDao.cancelCompute(s) > 0){
+						if(computeDao.updateDistribution(d.getComputeno(), d.getCode()) > 0){
+							continue;
+						}else{
+							return d.getShortname() + "的 " + d.getQtyallocated() + " 取消计算失败";
+						}
 					}
+				}else {
+					return "库存更新失败";
 				}
 			}else{
 				return "库存更新失败";
 			}
 		}
-		return "取消计算成功";
+		return msg + "取消计算成功";
 	}
 	/**
 	 * 根据期号加载需计算的征订代码
