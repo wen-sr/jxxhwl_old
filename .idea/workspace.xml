@@ -6,42 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="43776128-c632-41fc-b1cb-d493451da6ee" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/css/jc/s_ticket_bk.css" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/jsp/jc/compute.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/jsp/jc/compute1.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/jsp/jc/dbd.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/jsp/jc/dbdmid.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/jsp/jc/delivery.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/jsp/jc/delivery0.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/jsp/jc/delivery1.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/jsp/jc/fhprint.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/jsp/jc/input.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/jsp/jc/input1.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/jsp/jc/jc.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/jsp/jc/jc1.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/jsp/jc/jhqd.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/jsp/jc/pack0.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/jsp/jc/pick.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/jsp/jc/qd.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/jsp/jc/qd0.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/jsp/jc/receipt.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/jsp/jc/receipt1.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/jsp/jc/wbpq.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/jsp/jc/wbpqmid.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/jsp/jc/xp.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/jsp/jc/xpmid.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/jsp/jc/yufenfa.jsp" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/WebRoot/css/jc/Copy (2) of s_ticket.css" afterPath="$PROJECT_DIR$/WebRoot/css/jc/s_ticket_margin.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/jxxhwl_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/jxxhwl_war_exploded.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebRoot/css/jc/allocationList.css" afterPath="$PROJECT_DIR$/WebRoot/css/jc/allocationList.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebRoot/css/jc/s_ticket.css" afterPath="$PROJECT_DIR$/WebRoot/css/jc/s_ticket.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebRoot/css/jc/t_ticket.css" afterPath="$PROJECT_DIR$/WebRoot/css/jc/t_ticket.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebRoot/jsp/jc/print/s_ticket.jsp" afterPath="$PROJECT_DIR$/WebRoot/jsp/jc/print/s_ticket.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebRoot/jsp/jc/print/t_ticket.jsp" afterPath="$PROJECT_DIR$/WebRoot/jsp/jc/print/t_ticket.jsp" />
-    </list>
+    <list default="true" id="43776128-c632-41fc-b1cb-d493451da6ee" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/WebRoot/WEB-INF/classes/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -75,8 +40,8 @@
       <file leaf-file-name="InventoryDaoImpl.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/jxxhwl/jc/dao/impl/InventoryDaoImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="106" column="52" lean-forward="false" selection-start-line="106" selection-start-column="52" selection-end-line="106" selection-end-column="52" />
+            <state relative-caret-position="390">
+              <caret line="186" column="18" lean-forward="true" selection-start-line="186" selection-start-column="18" selection-end-line="186" selection-end-column="18" />
               <folding>
                 <marker date="1504658852367" expanded="true" signature="1640:1724" ph="insert into JiaoCaiInventory... " />
                 <marker date="1504658852367" expanded="true" signature="2068:2177" ph="update JiaoC... " />
@@ -229,7 +194,7 @@
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1936" />
@@ -620,16 +585,15 @@
       <updated>1504615032324</updated>
       <workItem from="1504615038841" duration="5988000" />
       <workItem from="1504622162490" duration="1553000" />
-      <workItem from="1504658884520" duration="16841000" />
+      <workItem from="1504658884520" duration="18172000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24382000" />
+    <option name="totallyTimeSpent" value="25713000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="876" extended-state="7" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -651,8 +615,8 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3216783" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33072627" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23650385" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33072627" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19616205" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -840,7 +804,7 @@
         <state relative-caret-position="646">
           <caret line="56" column="16" lean-forward="true" selection-start-line="56" selection-start-column="16" selection-end-line="56" selection-end-column="16" />
           <folding>
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -898,8 +862,8 @@
         <state relative-caret-position="229">
           <caret line="39" column="9" lean-forward="true" selection-start-line="39" selection-start-column="9" selection-end-line="39" selection-end-column="9" />
           <folding>
-            <element signature="n#style#0;n#a#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#6;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#span#0;n#div#6;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1050,8 +1014,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/jxxhwl/jc/dao/impl/InventoryDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="106" column="52" lean-forward="false" selection-start-line="106" selection-start-column="52" selection-end-line="106" selection-end-column="52" />
+        <state relative-caret-position="390">
+          <caret line="186" column="18" lean-forward="true" selection-start-line="186" selection-start-column="18" selection-end-line="186" selection-end-column="18" />
           <folding>
             <marker date="1504658852367" expanded="true" signature="1640:1724" ph="insert into JiaoCaiInventory... " />
             <marker date="1504658852367" expanded="true" signature="2068:2177" ph="update JiaoC... " />
