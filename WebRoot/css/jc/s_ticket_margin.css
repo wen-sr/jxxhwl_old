@@ -7,53 +7,46 @@
 
 .d{
 	margin-top:0;
-	overflow: hidden;
-}
-@page
-{
-	size:32.6cm;
+	overflow: auto;
 }
 .div_box_left{
 	position: relative;
-	width:5.02cm;
-	height:7.29cm;
+	width:6cm;
+	height:7.5cm;
 	float:left;
 	overflow:hidden;
-	padding:10mm 5mm 10mm 10mm;
-	/*background:#43e;*/
+	margin:1.2cm 0.5cm;
 }
 .div_box_right{
 	position: relative;
-	width:5.02cm;
-	height:7.29cm;
-	float:right;
+	width:6cm;
+	height:7.5cm;
+	float:left;
 	overflow:hidden;
-	padding:10mm 10mm 10mm 5mm;
-	/*background:#7d5;*/
+	margin:1.2cm 0cm 1.2cm 1cm;
 }
 .div_box{
 	position: relative;
-	width:5.52cm;
-	height:7.29cm;
+	width:6cm;
+	height:7.5cm;
 	float:left;
 	overflow:hidden;
-	padding:10mm 5mm;
-	/*background:#9a5;*/
+	margin:1.2cm 0.5cm;
 }
 .div_subcode{
 	position: absolute;
 	text-align:center;
 	font-size:25px;
 	font-weight:bold;
-	top:1.5cm;
+	top:0.5cm;
 	left:1cm;
 }
 .div_descr{
 	position: absolute;
-	top:2.5cm;
+	top:1.5cm;
 	text-align:center;
 	font-size:15px;
-	left:0.7cm;
+	left:1cm;
 	overflow:hidden;
 }
 .div_customer{
@@ -61,7 +54,7 @@
 	text-align:center;
 	font-size:20px;
 	font-weight:bold;
-	top:4cm;
+	top:3cm;
 	left:1cm;
 	width:80%;
 	overflow:hidden;
@@ -71,7 +64,7 @@
 	text-align:center;
 	font-size:35px;
 	font-weight:bold;
-	top:6cm;
+	top:4.5cm;
 	left:1cm;
 	width:80%;
 	height:1cm;
@@ -85,26 +78,22 @@
 	text-align:center;
 	font-size:35px;
 	font-weight:bold;
-	top:7.5cm;
+	top:6.5cm;
 	float:left;
-	left:1cm;
+	left:0.7cm;
 }
 .div_shipno{
 	position: absolute;
 	text-align:center;
 	font-size:35px;
 	font-weight:bold;
-	top:7.5cm;
+	top:6.5cm;
 	float:right;
-	right:0.5cm;
+	right:0.7cm;
 }
 .div_note{
-	position: absolute;
 	text-align:center;
 	font-size:35px;
 	font-weight:bold;
-	top:2cm;
-	width:80%;
-	height:1.5cm;
-	overflow:hidden;
+	margin-top:1.3cm;
 }

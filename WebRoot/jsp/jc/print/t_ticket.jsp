@@ -27,9 +27,9 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	<script type="text/javascript" src="${pageContext.request.contextPath}/easyui/locale/easyui-lang-zh_CN.js"></script>
 	<script language="javascript" src="${pageContext.request.contextPath}/js/jquery.jqprint.js"></script>
 	<STYLE type="text/css">
-		.f{
-			font-size:25px;
-			font-weight:bold;
+		div{
+			padding:0;
+			margin:0;
 		}
 	</STYLE>
 	<script type="text/javascript">
@@ -40,7 +40,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   </head>
   
   <body>
-  	<a class="easyui-linkbutton" style="margin: 10px 6%;" data-options="iconCls:'icon-print',size:'small'" onclick="doJqprint()">打印</a>
+  	<a class="easyui-linkbutton" style="margin: 0 6%;" data-options="iconCls:'icon-print',size:'small'" onclick="doJqprint()">打印</a>
   	<div id="d">
     <s:iterator value="map.list" status="st" >
     	<div class="data">
@@ -51,40 +51,12 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 			<div class='d_shortname'>收件方：${shortname }</div>
 			<div class='d_caseqty'>包件数：${ caseqty } / ${ caseqty }</div>
 			<div class='d_note'>
-				<span style='font-size:25px;font-weight:bold;padding:1px;border:1px solid #000;'>教材</span>
+				<span style='font-size:25px;font-weight:bold;padding:1px;border:1px solid #000;margin-left: 5mm;'>教材</span>
 			</div>
 			<div class='d_buttom'>
 				<h2>江西新华物流有限公司</h2>
 			</div>
 		</div>
-    	
-    	
-    	
-    	
-    	
-    	
-    	
-<!--     	<table> -->
-<!--     		<tr><td>&nbsp;</td><td style=font-size:30px;font-weight:bold; align="center">${issuenumber}${subcode }<td></tr> -->
-<!--     		<tr> -->
-<!--     			<td>&nbsp;</td><td class='f' style="font-size:22px;font-weight:bold;">批次号：${ batchno }</td> -->
-<!--     		<tr/> -->
-<!--     		<tr>	 -->
-<!--     			<td>&nbsp;</td><td class='f' style="font-size:22px;font-weight:bold;">运输号：${ shipno }</td> -->
-<!--     		<tr/> -->
-<!--     		<tr>	 -->
-<!--     			<td>&nbsp;</td><td style="font-family:Code39QuarterInchTT-Regular;font-size:50px;">${ shipno }</td> -->
-<!--     		<tr/> -->
-<!--     		<tr>	 -->
-<!--     			<td>&nbsp;</td><td class='f' style="font-size:22px;font-weight:bold;">收件方：${ shortname }</td> -->
-<!--     		<tr/> -->
-<!--     		<tr> -->
-<!--     			<td>&nbsp;</td><td style="font-size:22px;font-weight:bold;">包件数：${ caseqty } / ${ caseqty } &nbsp;&nbsp;&nbsp;&nbsp; -->
-<!--     			<span style="font-size:25px;font-weight:bold;padding:3px;border:1px solid #000;">教材</span></td>  -->
-<!--     		</tr> -->
-<!--     		<tr><td colspan='2' align='center'><h2>江西新华物流有限公司</h2></td></tr> -->
-<!--     	</table> -->
-    	
     </s:iterator>
     </div>
   </body>

@@ -39,8 +39,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   
   <body>
   	<input type="hidden" id="batchno" value="${batchno}"/>
- 	<a class="easyui-linkbutton" style="margin-left:30%;" data-options="iconCls:'icon-print',size:'small'" onclick="doJqprint()">打印</a>	
-  	<div id="d" style="width:33cm">
+ 	<a class="easyui-linkbutton" style="margin-left:30%;" data-options="iconCls:'icon-print',size:'small'" onclick="doJqprint()">打印</a>
+  	<div id="d" style="width:32.6cm">
 	  	<%-- <s:iterator value="map.list"  status="st">
 	  		<table>
 	  		<s:iterator begin="1" end="caseqty-1" status="stt">

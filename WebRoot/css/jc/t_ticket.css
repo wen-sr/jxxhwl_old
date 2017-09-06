@@ -1,13 +1,18 @@
 *{
 	font-weight:bold;
 }
+.d{
+	width: 80mm;
+	overflow: hidden;
+}
 
 .data{
+	position: relative;
 	font-family:"黑体";
-	width:76mm;
-	height:86mm;
-	margin-left:2mm;
-	/*margin:0px auto;*/
+	width:78mm;
+	height:88mm;
+	padding-left:2mm;
+	overflow: hidden;
 }
 .d_subcode{
 	margin-top:5mm;
@@ -24,10 +29,11 @@
 }
 .d_shipno_1{
 	margin-top:1mm;
-	margin-left:5mm;
+	margin-left:15mm;
 	font-size:30px;
 	font-family:Code39QuarterInchTT-Regular;
 	font-weight:normal;
+	width:70%;
 }
 .d_shortname{
 	margin-top:3mm;
@@ -41,11 +47,10 @@
 }
 .d_note{
 	margin-top:1mm;
-	float:right;
-	margin-right:2mm;
+	padding-right:1mm;
 }
 .d_buttom{
 	margin-top:5mm;
 	text-align:center;
-	clear:both;
+	overflow: hidden;
 }
