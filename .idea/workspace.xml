@@ -7,13 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="43776128-c632-41fc-b1cb-d493451da6ee" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/jxxhwl/jc/service/impl/ComputeServiceImpl.class" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/jxxhwl/jc/service/impl/ComputeServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/jxxhwl/jc/service/impl/DistributionServiceImpl.class" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/jxxhwl/jc/service/impl/DistributionServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/jxxhwl/jc/service/impl/ReceiptServiceImpl.class" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/jxxhwl/jc/service/impl/ReceiptServiceImpl.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/jxxhwl/jc/service/impl/ComputeServiceImpl.java" afterPath="$PROJECT_DIR$/src/com/jxxhwl/jc/service/impl/ComputeServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/jxxhwl/jc/service/impl/DistributionServiceImpl.java" afterPath="$PROJECT_DIR$/src/com/jxxhwl/jc/service/impl/DistributionServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/jxxhwl/jc/service/impl/ReceiptServiceImpl.java" afterPath="$PROJECT_DIR$/src/com/jxxhwl/jc/service/impl/ReceiptServiceImpl.java" />
     </list>
     <ignored path="$PROJECT_DIR$/WebRoot/WEB-INF/classes/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -572,12 +566,12 @@
       <workItem from="1504615038841" duration="5988000" />
       <workItem from="1504622162490" duration="1553000" />
       <workItem from="1504658884520" duration="18223000" />
-      <workItem from="1504688481055" duration="14532000" />
+      <workItem from="1504688481055" duration="14810000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40296000" />
+    <option name="totallyTimeSpent" value="40574000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -602,7 +596,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36593592" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33052278" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33052278" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12934947" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
