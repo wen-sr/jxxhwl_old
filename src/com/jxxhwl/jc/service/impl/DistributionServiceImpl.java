@@ -78,8 +78,11 @@ public class DistributionServiceImpl implements DistributionService {
 				map.put("msg", s);
 				return map;
 			}
+			//更新Inventory的库存信息
 			if(inventoryDao.distributeInventory(inv) > 0){
+				//保存分发信息
 				d = distributionDao.save(distribution);
+				//查询Inventory库存
 				Inventory ity = inventoryDao.findByIssuenumberAndSubcode(inv);
 				map.put("qtyfree", ity.getQtyfree());
 			}else{
@@ -122,13 +125,14 @@ public class DistributionServiceImpl implements DistributionService {
 		if(!"0".equals(status)){
 			return "该记录已经开始作业，无法删除！";
 		}
-		if("1".equals(type)){
-			Distribution dd = distributionDao.findById(id);
-			Inventory i = new Inventory(dd.getIssuenumber(),dd.getSubcode());
-			if(inventoryDao.updateInventoryChange(i, 0, dd.getQtyallocated())<=0){
-				return "库存更新失败";
-			}
-		}
+		//更新库存的操作放在取消计算那一步，这里就不需要这个操作了
+//		if("1".equals(type)){
+//			Distribution dd = distributionDao.findById(id);
+//			Inventory i = new Inventory(dd.getIssuenumber(),dd.getSubcode());
+//			if(inventoryDao.updateInventoryChange(i, 0, dd.getQtyallocated())<=0){
+//				return "库存更新失败";
+//			}
+//		}
 		int i = distributionDao.delete(id);
 		if(i > 0){
 			return "记录删除成功！";

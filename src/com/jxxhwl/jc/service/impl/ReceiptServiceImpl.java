@@ -134,25 +134,26 @@ public class ReceiptServiceImpl implements ReceiptService {
 		//判断是否已分发
 		//查询可用库存是否足够
 		Inventory in = new Inventory(r.getIssuenumber(),r.getSubcode());
-		in = inventoryDao.findByIssuenumberAndSubcode(in);
+		in.setPack(r.getPack());
+		in = inventoryDao.findByIssuenumberAndSubcodeDetail(in);
 		if(r.getQtyreceipt() > in.getQtyfree()){
 			return "库存已经分发，无法删除";
 		}
-		in.setPack(r.getPack());
-		if(inventoryDao.findInventoryDetail(in) != null){
-			in = inventoryDao.findInventoryDetail(in).get(0);
-			if(r.getQtyreceipt() > in.getQtyfree()){
-				return "库存已经分发，无法删除";
-			}
-		}else{
-			return "库存已经分发，无法删除";
-		}
+		//上一步就已经判断了有库存且库存数够
+//		in.setPack(r.getPack());
+//		if(inventoryDao.findInventoryDetail(in) != null){
+//			in = inventoryDao.findInventoryDetail(in).get(0);
+//			if(r.getQtyreceipt() > in.getQtyfree()){
+//				return "库存已经分发，无法删除";
+//			}
+//		}else{
+//			return "库存已经分发，无法删除";
+//		}
 		//减去库存
 		Inventory i = new Inventory(r.getIssuenumber(),r.getSubcode(),r.getQtyreceipt(),0);
-		in.setQtyreceipt(r.getQtyreceipt());
-		in.setPack(r.getPack());
+		i.setPack(r.getPack());
 		if(inventoryDao.remove(i) > 0){
-			if(inventoryDao.removeDetail(in) > 0){
+			if(inventoryDao.removeDetail(i) > 0){
 				if(receiptDao.delete(id) >0){
 					return "删除成功";
 				}else{
@@ -161,7 +162,7 @@ public class ReceiptServiceImpl implements ReceiptService {
 			}else{
 				return "库存更新失败";
 			}
-			
+
 		}else{
 			return "库存更新失败";
 		}

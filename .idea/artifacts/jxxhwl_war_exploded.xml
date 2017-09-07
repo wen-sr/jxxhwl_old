@@ -1,6 +1,6 @@
 <component name="ArtifactManager">
   <artifact type="exploded-war" name="jxxhwl:war exploded">
-    <output-path>F:/apache-tomcat-6.0.35/webapps/jxxhwl</output-path>
+    <output-path>E:/apache-tomcat-6.0.37-windows-x64/apache-tomcat-6.0.37/webapps/jxxhwl</output-path>
     <root id="root">
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
