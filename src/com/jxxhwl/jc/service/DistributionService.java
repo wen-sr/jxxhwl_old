@@ -15,7 +15,7 @@ public interface DistributionService {
 	
 	/**
 	 * 获取分发记录条数
-	 * @param type 类型（0：预分发，1：库存分发）
+	 * @param distribution 类型（0：预分发，1：库存分发）
 	 * @return
 	 */
 	public int getDistributionTotalRows(Distribution distribution);
@@ -24,7 +24,7 @@ public interface DistributionService {
 	 * 分页获取分发数据
 	 * @param pageSize 每页显示条数
 	 * @param currentPage 当前页
-	 * @param type 类型（0：预分发，1：库存分发）
+	 * @param distribution 类型（0：预分发，1：库存分发）
 	 * @return
 	 */
 	public Map<String,Object> getDistributionLoadData(int pageSize,
