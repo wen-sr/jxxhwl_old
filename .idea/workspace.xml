@@ -7,7 +7,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="43776128-c632-41fc-b1cb-d493451da6ee" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/jxxhwl/wx/action/WXDispatcher.class" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/jxxhwl/wx/action/WXDispatcher.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/jxxhwl/wx/util/WeiXinUtil.class" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/jxxhwl/wx/util/WeiXinUtil.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/jxxhwl/wx/action/WXDispatcher.java" afterPath="$PROJECT_DIR$/src/com/jxxhwl/wx/action/WXDispatcher.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/jxxhwl/wx/util/WeiXinUtil.java" afterPath="$PROJECT_DIR$/src/com/jxxhwl/wx/util/WeiXinUtil.java" />
     </list>
     <ignored path="$PROJECT_DIR$/WebRoot/WEB-INF/classes/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,24 +23,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="InventoryDao.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/jxxhwl/jc/dao/InventoryDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="87">
-              <caret line="27" column="38" lean-forward="false" selection-start-line="27" selection-start-column="38" selection-end-line="27" selection-end-column="38" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="InventoryDaoImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/jxxhwl/jc/dao/impl/InventoryDaoImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="70">
+            <state relative-caret-position="2527">
               <caret line="142" column="0" lean-forward="false" selection-start-line="142" selection-start-column="0" selection-end-line="142" selection-end-column="0" />
               <folding>
-                <element signature="e#3796#4012#0" expanded="true" />
-                <element signature="e#4011#4012#0" expanded="true" />
                 <marker date="1504709334147" expanded="true" signature="1640:1724" ph="insert into JiaoCaiInventory... " />
                 <marker date="1504709334147" expanded="true" signature="2068:2177" ph="update JiaoC... " />
                 <marker date="1504709334147" expanded="true" signature="2523:2631" ph="update JiaoC... " />
@@ -65,31 +57,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ComputeServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/jxxhwl/jc/service/impl/ComputeServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="101">
-              <caret line="124" column="0" lean-forward="false" selection-start-line="124" selection-start-column="0" selection-end-line="124" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="ReceiptAction.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/jxxhwl/jc/action/ReceiptAction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="163">
+            <state relative-caret-position="950">
               <caret line="66" column="0" lean-forward="false" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ReceiptServiceImpl.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ReceiptServiceImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/jxxhwl/jc/service/impl/ReceiptServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-120">
-              <caret line="155" column="49" lean-forward="true" selection-start-line="155" selection-start-column="49" selection-end-line="155" selection-end-column="49" />
+            <state relative-caret-position="3420">
+              <caret line="180" column="13" lean-forward="false" selection-start-line="180" selection-start-column="13" selection-end-line="180" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -97,21 +79,61 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CglibAopProxy.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/WebRoot/WEB-INF/lib/spring-aop-4.3.5.RELEASE.jar!/org/springframework/aop/framework/CglibAopProxy.class">
+      <file leaf-file-name="WXAction.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/jxxhwl/wx/action/WXAction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="87">
-              <caret line="461" column="0" lean-forward="false" selection-start-line="461" selection-start-column="0" selection-end-line="461" selection-end-column="0" />
+            <state relative-caret-position="114">
+              <caret line="30" column="13" lean-forward="false" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ReflectiveMethodInvocation.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/WebRoot/WEB-INF/lib/spring-aop-4.3.5.RELEASE.jar!/org/springframework/aop/framework/ReflectiveMethodInvocation.class">
+      <file leaf-file-name="WXObjectService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/jxxhwl/wx/service/WXObjectService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="87">
-              <caret line="63" column="0" lean-forward="false" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
+            <state relative-caret-position="76">
+              <caret line="4" column="17" lean-forward="false" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WXUserInfoService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/jxxhwl/wx/service/WXUserInfoService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="76">
+              <caret line="4" column="17" lean-forward="false" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WeiXinUtil.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/jxxhwl/wx/util/WeiXinUtil.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-222">
+              <caret line="41" column="3" lean-forward="true" selection-start-line="41" selection-start-column="3" selection-end-line="41" selection-end-column="3" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TestDispatcher.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/jxxhwl/wx/test/TestDispatcher.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="114">
+              <caret line="10" column="23" lean-forward="false" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WXDispatcher.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/jxxhwl/wx/action/WXDispatcher.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1178">
+              <caret line="88" column="12" lean-forward="false" selection-start-line="86" selection-start-column="12" selection-end-line="88" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -120,45 +142,9 @@
       <file leaf-file-name="MethodProxy.class" pinned="false" current-in-tab="false">
         <entry file="jar://$PROJECT_DIR$/WebRoot/WEB-INF/lib/spring-core-4.3.5.RELEASE.jar!/org/springframework/cglib/proxy/MethodProxy.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
+            <state relative-caret-position="1691">
               <caret line="104" column="0" lean-forward="false" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Receipt.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/jxxhwl/jc/entity/Receipt.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="87">
-              <caret line="61" column="0" lean-forward="false" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
-              <folding>
-                <element signature="e#1422#1423#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ReceiptDaoImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/jxxhwl/jc/dao/impl/ReceiptDaoImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="87">
-              <caret line="207" column="15" lean-forward="false" selection-start-line="207" selection-start-column="15" selection-end-line="207" selection-end-column="15" />
-              <folding>
-                <marker date="1504603395748" expanded="true" signature="1778:1947" ph="insert into jiaocaireceipt... " />
-                <marker date="1504603395748" expanded="true" signature="3060:3625" ph="select top m... JiaoCaiReceipt" />
-                <marker date="1504603395748" expanded="true" signature="3387:3452" ph="select short... JiaoCaiStorer" />
-                <marker date="1504603395748" expanded="true" signature="6202:6252" ph="select count... JiaoCaiReceipt" />
-                <marker date="1504603395748" expanded="true" signature="6497:6631" ph="update jiaoc... " />
-                <marker date="1504603395748" expanded="true" signature="7044:7084" ph="select * fro... JiaoCaiReceipt" />
-                <marker date="1504603395748" expanded="true" signature="7800:7838" ph="delete from " />
-                <marker date="1504603395748" expanded="true" signature="8141:8784" ph="select a.iss... issuenumber" />
-                <marker date="1504603395748" expanded="true" signature="8211:8278" ph="select short... JiaoCaiStorer" />
-                <marker date="1504603395748" expanded="true" signature="8380:8477" ph="select issue... JiaoCaiOrders" />
-                <marker date="1504603395748" expanded="true" signature="8492:8595" ph="select issue... JiaoCaiReceipt" />
-                <marker date="1504603395748" expanded="true" signature="10080:10376" ph="select a.iss... JiaoCaiReceipt" />
-                <marker date="1504603395748" expanded="true" signature="10157:10224" ph="select short... JiaoCaiStorer" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -199,6 +185,8 @@
         <option value="$PROJECT_DIR$/src/com/jxxhwl/jc/service/impl/DistributionServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/com/jxxhwl/jc/dao/impl/InventoryDaoImpl.java" />
         <option value="$PROJECT_DIR$/src/com/jxxhwl/jc/service/impl/ReceiptServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/com/jxxhwl/wx/util/WeiXinUtil.java" />
+        <option value="$PROJECT_DIR$/src/com/jxxhwl/wx/action/WXDispatcher.java" />
       </list>
     </option>
   </component>
@@ -244,8 +232,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
+      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -269,15 +258,23 @@
               <item name="jxxhwl" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="jxxhwl" type="462c0819:PsiDirectoryNode" />
-              <item name="jc" type="462c0819:PsiDirectoryNode" />
+              <item name="wx" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="jxxhwl" type="b2602c69:ProjectViewProjectNode" />
               <item name="jxxhwl" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="jxxhwl" type="462c0819:PsiDirectoryNode" />
-              <item name="jc" type="462c0819:PsiDirectoryNode" />
-              <item name="action" type="462c0819:PsiDirectoryNode" />
+              <item name="wx" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jxxhwl" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jxxhwl" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="jxxhwl" type="462c0819:PsiDirectoryNode" />
+              <item name="wx" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="jxxhwl" type="b2602c69:ProjectViewProjectNode" />
@@ -301,19 +298,18 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="project.structure.last.edited" value="Facets" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.annotationProcessors" />
     <property name="nodejs_interpreter_path" value="D:/Program Files/nodejs/node" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/WebRoot" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="add_unversioned_files" value="true" />
   </component>
   <component name="RecentsManager">
@@ -334,7 +330,32 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Tomcat Server.tomcate6">
+  <component name="RunManager" selected="JUnit.TestDispatcher.testDispatcher">
+    <configuration name="TestDispatcher.testDispatcher" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.jxxhwl.wx.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="jxxhwl" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.jxxhwl.wx.test" />
+      <option name="MAIN_CLASS_NAME" value="com.jxxhwl.wx.test.TestDispatcher" />
+      <option name="METHOD_NAME" value="testDispatcher" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -552,6 +573,15 @@
         </option>
       </method>
     </configuration>
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue="Tomcat Server.tomcate6" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.TestDispatcher.testDispatcher" />
+    </list>
+    <recent_temporary>
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="JUnit.TestDispatcher.testDispatcher" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
@@ -567,37 +597,59 @@
       <workItem from="1504622162490" duration="1553000" />
       <workItem from="1504658884520" duration="18223000" />
       <workItem from="1504688481055" duration="14810000" />
+      <workItem from="1504775862058" duration="49000" />
+      <workItem from="1504947693686" duration="634000" />
+      <workItem from="1505002722643" duration="1074000" />
+      <workItem from="1505120083258" duration="1009000" />
+      <workItem from="1505123118530" duration="54000" />
     </task>
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="TestDispatcher_testDispatcher - 2017.09.11 at 16h 55m 44s.xml">
+      <configuration name="TestDispatcher.testDispatcher" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestDispatcher_testDispatcher - 2017.09.11 at 16h 56m 15s.xml">
+      <configuration name="TestDispatcher.testDispatcher" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestDispatcher_testDispatcher - 2017.09.11 at 16h 58m 56s.xml">
+      <configuration name="TestDispatcher.testDispatcher" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestDispatcher_testDispatcher - 2017.09.11 at 17h 43m 52s.xml">
+      <configuration name="TestDispatcher.testDispatcher" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestDispatcher_testDispatcher - 2017.09.11 at 17h 46m 01s.xml">
+      <configuration name="TestDispatcher.testDispatcher" configurationId="JUnit" />
+    </history-entry>
+  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40574000" />
+    <option name="totallyTimeSpent" value="43394000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.63237774" sideWeight="0.5060514" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32996634" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13046272" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1301059" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3946037" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.63237774" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.63237774" sideWeight="0.49394855" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.78752106" sideWeight="0.67776096" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36593592" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33052278" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12934947" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26399395" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -625,40 +677,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/jxxhwl/jc/common/BaseAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="539">
-          <caret line="53" column="7" lean-forward="false" selection-start-line="53" selection-start-column="7" selection-end-line="53" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#457#484#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebRoot/css/jc/s_ticket.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebRoot/css/jc/s_ticket_bk.css" />
-    <entry file="file://$PROJECT_DIR$/WebRoot/css/jc/s_ticket_margin.css" />
-    <entry file="file://$PROJECT_DIR$/WebRoot/css/jc/Copy (3) of s_ticket.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebRoot/jsp/jc/print/s_ticket.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="56" column="16" lean-forward="true" selection-start-line="56" selection-start-column="16" selection-end-line="56" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/WebRoot/jsp/jc/print/allocationList.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="410">
@@ -733,7 +751,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1957">
           <caret line="103" column="27" lean-forward="false" selection-start-line="103" selection-start-column="27" selection-end-line="103" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -741,7 +758,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1976">
           <caret line="104" column="60" lean-forward="false" selection-start-line="104" selection-start-column="29" selection-end-line="104" selection-end-column="60" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -749,7 +765,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
           <caret line="13" column="31" lean-forward="false" selection-start-line="13" selection-start-column="31" selection-end-line="13" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -757,7 +772,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="309">
           <caret line="42" column="7" lean-forward="false" selection-start-line="42" selection-start-column="7" selection-end-line="42" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -765,7 +779,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -773,7 +786,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
           <caret line="18" column="10" lean-forward="false" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -781,7 +793,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
           <caret line="12" column="19" lean-forward="false" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -789,7 +800,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1292">
           <caret line="145" column="11" lean-forward="false" selection-start-line="145" selection-start-column="11" selection-end-line="145" selection-end-column="11" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -797,7 +807,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -805,7 +814,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="181">
           <caret line="12" column="21" lean-forward="false" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -813,7 +821,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
           <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -821,7 +828,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="82">
           <caret line="104" column="162" lean-forward="false" selection-start-line="104" selection-start-column="162" selection-end-line="104" selection-end-column="162" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -829,7 +835,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="186">
           <caret line="58" column="0" lean-forward="false" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -837,7 +842,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="208">
           <caret line="177" column="58" lean-forward="true" selection-start-line="177" selection-start-column="58" selection-end-line="177" selection-end-column="58" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -845,7 +849,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
           <caret line="31" column="18" lean-forward="false" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -853,7 +856,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="157">
           <caret line="389" column="0" lean-forward="false" selection-start-line="389" selection-start-column="0" selection-end-line="389" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -861,7 +863,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
           <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -869,7 +870,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="88" column="37" lean-forward="false" selection-start-line="88" selection-start-column="37" selection-end-line="88" selection-end-column="37" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -877,31 +877,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="269">
           <caret line="178" column="34" lean-forward="true" selection-start-line="178" selection-start-column="34" selection-end-line="178" selection-end-column="34" />
-          <folding>
-            <marker date="1504603395529" expanded="true" signature="1440:1671" ph="insert into JiaoCaiDistribute... " />
-            <marker date="1504603395529" expanded="true" signature="1579:1632" ph="select short... jiaocaistorer" />
-            <marker date="1504603395529" expanded="true" signature="2905:3083" ph="select count... jiaocaidistribute" />
-            <marker date="1504603395529" expanded="true" signature="3784:4194" ph="select top m... jiaocaidistribute" />
-            <marker date="1504603395529" expanded="true" signature="6703:6752" ph="select statu... JiaoCaiDistribute" />
-            <marker date="1504603395529" expanded="true" signature="7182:7239" ph="delete from " />
-            <marker date="1504603395529" expanded="true" signature="7478:7678" ph="update JiaoC... " />
-            <marker date="1504603395529" expanded="true" signature="7525:7581" ph="select short... JiaoCaiStorer" />
-            <marker date="1504603395529" expanded="true" signature="8014:8058" ph="select * fro... JiaoCaiDistribute" />
-            <marker date="1504603395529" expanded="true" signature="9050:9465" ph="select b.iss... jiaocaidistribute" />
-            <marker date="1504603395529" expanded="true" signature="10462:11150" ph="select top m... jiaocaidistribute" />
-            <marker date="1504603395529" expanded="true" signature="12563:12803" ph="select count... jiaocaidistribute" />
-            <marker date="1504603395529" expanded="true" signature="13158:13259" ph="update JiaoC... " />
-            <marker date="1504603395529" expanded="true" signature="13613:14265" ph="select aa.* issuenumber" />
-            <marker date="1504603395529" expanded="true" signature="13631:14265" ph="select a.iss... issuenumber" />
-            <marker date="1504603395529" expanded="true" signature="13745:13822" ph="select short... JiaoCaiStorer" />
-            <marker date="1504603395529" expanded="true" signature="13841:13938" ph="select issue... JiaoCaiOrders" />
-            <marker date="1504603395529" expanded="true" signature="13953:14076" ph="select issue... JiaoCaiDistribute" />
-            <marker date="1504603395529" expanded="true" signature="16603:17049" ph="select COUNT... issuenumber" />
-            <marker date="1504603395529" expanded="true" signature="16625:16722" ph="select issue... JiaoCaiOrders" />
-            <marker date="1504603395529" expanded="true" signature="16737:16860" ph="select issue... JiaoCaiDistribute" />
-            <marker date="1504603395529" expanded="true" signature="17828:18141" ph="select disti... JiaoCaiDistribute" />
-            <marker date="1504603395529" expanded="true" signature="17907:17974" ph="select short... JiaoCaiStorer" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -909,7 +884,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="269">
           <caret line="134" column="9" lean-forward="true" selection-start-line="134" selection-start-column="9" selection-end-line="134" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -917,7 +891,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="479">
           <caret line="114" column="0" lean-forward="false" selection-start-line="114" selection-start-column="0" selection-end-line="114" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -925,7 +898,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="131" column="0" lean-forward="false" selection-start-line="131" selection-start-column="0" selection-end-line="131" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -933,25 +905,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="62">
           <caret line="552" column="0" lean-forward="false" selection-start-line="552" selection-start-column="0" selection-end-line="552" selection-end-column="0" />
-          <folding>
-            <marker date="1504603395841" expanded="true" signature="649:1075" ph="select top m... JiaoCaiCompute" />
-            <marker date="1504603395841" expanded="true" signature="3784:3999" ph="select count... JiaoCaiCompute" />
-            <marker date="1504603395841" expanded="true" signature="4728:4761" ph="select batch... JiaoCaiNumber" />
-            <marker date="1504603395841" expanded="true" signature="5665:5763" ph="update JiaoC... " />
-            <marker date="1504603395841" expanded="true" signature="6047:6094" ph="update JiaoC... " />
-            <marker date="1504603395841" expanded="true" signature="6726:6758" ph="select shipn... JiaoCaiNumber" />
-            <marker date="1504603395841" expanded="true" signature="7104:7173" ph="select min(i... JiaoCaiCompute" />
-            <marker date="1504603395841" expanded="true" signature="7527:8435" ph="select top m... JiaoCaiCompute" />
-            <marker date="1504603395841" expanded="true" signature="10052:10342" ph="select count... JiaoCaiCompute" />
-            <marker date="1504603395841" expanded="true" signature="10663:10965" ph="select a.iss... JiaoCaiCompute" />
-            <marker date="1504603395841" expanded="true" signature="12876:13209" ph="select a.iss... JiaoCaiCompute" />
-            <marker date="1504603395841" expanded="true" signature="14328:15289" ph="select top m... JiaoCaiCompute" />
-            <marker date="1504603395841" expanded="true" signature="16918:17244" ph="select count... JiaoCaiCompute" />
-            <marker date="1504603395841" expanded="true" signature="17638:18035" ph="select top m... JiaoCaiCompute" />
-            <marker date="1504603395841" expanded="true" signature="21090:21257" ph="select count... JiaoCaiCompute" />
-            <marker date="1504603395841" expanded="true" signature="22130:22234" ph="update JiaoC... " />
-            <marker date="1504603395841" expanded="true" signature="22516:22576" ph="select disti... JiaoCaiCompute" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -959,33 +912,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="320">
           <caret line="200" column="0" lean-forward="false" selection-start-line="200" selection-start-column="0" selection-end-line="200" selection-end-column="0" />
-          <folding>
-            <marker date="1504603395498" expanded="true" signature="2562:2888" ph="select a.iss... JiaoCaiDistribute" />
-            <marker date="1504603395498" expanded="true" signature="2653:2761" ph="select SUM(q... JiaoCaiInventory_detail" />
-            <marker date="1504603395498" expanded="true" signature="4656:4860" ph="select COUNT... issuenumber" />
-            <marker date="1504603395498" expanded="true" signature="4678:4860" ph="select disti... JiaoCaiDistribute" />
-            <marker date="1504603395498" expanded="true" signature="5624:5672" ph="update JiaoC... " />
-            <marker date="1504603395498" expanded="true" signature="5914:6202" ph="update JiaoC... " />
-            <marker date="1504603395498" expanded="true" signature="6517:6896" ph="select top m... JiaoCaiCompute" />
-            <marker date="1504603395498" expanded="true" signature="9381:9622" ph="select COUNT... JiaoCaiCompute" />
-            <marker date="1504603395498" expanded="true" signature="9897:9951" ph="delete from " />
-            <marker date="1504603395498" expanded="true" signature="10234:10343" ph="update JiaoC... " />
-            <marker date="1504603395498" expanded="true" signature="10653:11881" ph="select issue... issuenumber" />
-            <marker date="1504603395498" expanded="true" signature="10776:11284" ph="select a.iss... JiaoCaiDistribute" />
-            <marker date="1504603395498" expanded="true" signature="11291:11769" ph="select a.iss... JiaoCaiDistribute" />
-            <marker date="1504603395498" expanded="true" signature="12897:13533" ph="select top m... JiaoCaiDistribute" />
-            <marker date="1504603395498" expanded="true" signature="13296:13532" ph="select top m... JiaoCaiDistribute" />
-            <marker date="1504603395498" expanded="true" signature="15002:15207" ph="select COUNT... JiaoCaiDistribute" />
-            <marker date="1504603395498" expanded="true" signature="15555:15843" ph="select a.iss... JiaoCaiDistribute" />
-            <marker date="1504603395498" expanded="true" signature="17013:17882" ph="select top m... JiaoCaiDistribute" />
-            <marker date="1504603395498" expanded="true" signature="19508:19788" ph="select count... JiaoCaiDistribute" />
-            <marker date="1504603395498" expanded="true" signature="20348:20473" ph="update JiaoC... " />
-            <marker date="1504603395498" expanded="true" signature="20720:20755" ph="select compu... JiaoCaiNumber" />
-            <marker date="1504603395498" expanded="true" signature="21493:21840" ph="insert into JiaoCaiCompute... " />
-            <marker date="1504603395498" expanded="true" signature="21615:21840" ph="select issue... JiaoCaiDistribute" />
-            <marker date="1504603395498" expanded="true" signature="22113:22161" ph="select * fro... JiaoCaiCompute" />
-            <marker date="1504603395498" expanded="true" signature="22919:22960" ph="select * fro... JiaoCaiCompute" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -993,69 +919,47 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="92">
           <caret line="78" column="0" lean-forward="false" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/jxxhwl/jc/dao/InventoryDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="87">
+        <state relative-caret-position="475">
           <caret line="27" column="38" lean-forward="false" selection-start-line="27" selection-start-column="38" selection-end-line="27" selection-end-column="38" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/jxxhwl/jc/dao/impl/ReceiptDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="87">
+        <state relative-caret-position="3420">
           <caret line="207" column="15" lean-forward="false" selection-start-line="207" selection-start-column="15" selection-end-line="207" selection-end-column="15" />
-          <folding>
-            <marker date="1504603395748" expanded="true" signature="1778:1947" ph="insert into jiaocaireceipt... " />
-            <marker date="1504603395748" expanded="true" signature="3060:3625" ph="select top m... JiaoCaiReceipt" />
-            <marker date="1504603395748" expanded="true" signature="3387:3452" ph="select short... JiaoCaiStorer" />
-            <marker date="1504603395748" expanded="true" signature="6202:6252" ph="select count... JiaoCaiReceipt" />
-            <marker date="1504603395748" expanded="true" signature="6497:6631" ph="update jiaoc... " />
-            <marker date="1504603395748" expanded="true" signature="7044:7084" ph="select * fro... JiaoCaiReceipt" />
-            <marker date="1504603395748" expanded="true" signature="7800:7838" ph="delete from " />
-            <marker date="1504603395748" expanded="true" signature="8141:8784" ph="select a.iss... issuenumber" />
-            <marker date="1504603395748" expanded="true" signature="8211:8278" ph="select short... JiaoCaiStorer" />
-            <marker date="1504603395748" expanded="true" signature="8380:8477" ph="select issue... JiaoCaiOrders" />
-            <marker date="1504603395748" expanded="true" signature="8492:8595" ph="select issue... JiaoCaiReceipt" />
-            <marker date="1504603395748" expanded="true" signature="10080:10376" ph="select a.iss... JiaoCaiReceipt" />
-            <marker date="1504603395748" expanded="true" signature="10157:10224" ph="select short... JiaoCaiStorer" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/jxxhwl/jc/entity/Receipt.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="87">
+        <state relative-caret-position="703">
           <caret line="61" column="0" lean-forward="false" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
-          <folding>
-            <element signature="e#1422#1423#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/jxxhwl/jc/service/impl/ComputeServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="101">
+        <state relative-caret-position="2033">
           <caret line="124" column="0" lean-forward="false" selection-start-line="124" selection-start-column="0" selection-end-line="124" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="jar://$PROJECT_DIR$/WebRoot/WEB-INF/lib/spring-aop-4.3.5.RELEASE.jar!/org/springframework/aop/framework/CglibAopProxy.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="87">
+        <state relative-caret-position="7961">
           <caret line="461" column="0" lean-forward="false" selection-start-line="461" selection-start-column="0" selection-end-line="461" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="jar://$PROJECT_DIR$/WebRoot/WEB-INF/lib/spring-aop-4.3.5.RELEASE.jar!/org/springframework/aop/framework/ReflectiveMethodInvocation.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="87">
+        <state relative-caret-position="741">
           <caret line="63" column="0" lean-forward="false" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
           <folding />
         </state>
@@ -1063,7 +967,7 @@
     </entry>
     <entry file="jar://$PROJECT_DIR$/WebRoot/WEB-INF/lib/spring-core-4.3.5.RELEASE.jar!/org/springframework/cglib/proxy/MethodProxy.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
+        <state relative-caret-position="1691">
           <caret line="104" column="0" lean-forward="false" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
           <folding />
         </state>
@@ -1071,7 +975,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/jxxhwl/jc/action/ReceiptAction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
+        <state relative-caret-position="950">
           <caret line="66" column="0" lean-forward="false" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
           <folding />
         </state>
@@ -1079,11 +983,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/jxxhwl/jc/dao/impl/InventoryDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="70">
+        <state relative-caret-position="2527">
           <caret line="142" column="0" lean-forward="false" selection-start-line="142" selection-start-column="0" selection-end-line="142" selection-end-column="0" />
           <folding>
-            <element signature="e#3796#4012#0" expanded="true" />
-            <element signature="e#4011#4012#0" expanded="true" />
             <marker date="1504709334147" expanded="true" signature="1640:1724" ph="insert into JiaoCaiInventory... " />
             <marker date="1504709334147" expanded="true" signature="2068:2177" ph="update JiaoC... " />
             <marker date="1504709334147" expanded="true" signature="2523:2631" ph="update JiaoC... " />
@@ -1113,11 +1015,59 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/jxxhwl/jc/service/impl/ReceiptServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-120">
-          <caret line="155" column="49" lean-forward="true" selection-start-line="155" selection-start-column="49" selection-end-line="155" selection-end-column="49" />
+        <state relative-caret-position="3420">
+          <caret line="180" column="13" lean-forward="false" selection-start-line="180" selection-start-column="13" selection-end-line="180" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/jxxhwl/wx/action/WXAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="30" column="13" lean-forward="false" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/jxxhwl/wx/service/WXObjectService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="17" lean-forward="false" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/jxxhwl/wx/service/WXUserInfoService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="17" lean-forward="false" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/jxxhwl/wx/action/WXDispatcher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1178">
+          <caret line="88" column="12" lean-forward="false" selection-start-line="86" selection-start-column="12" selection-end-line="88" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/jxxhwl/wx/util/WeiXinUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-222">
+          <caret line="41" column="3" lean-forward="true" selection-start-line="41" selection-start-column="3" selection-end-line="41" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/jxxhwl/wx/test/TestDispatcher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="10" column="23" lean-forward="false" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="30" />
+          <folding />
         </state>
       </provider>
     </entry>
