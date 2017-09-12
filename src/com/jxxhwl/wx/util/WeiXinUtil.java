@@ -45,7 +45,7 @@ public class WeiXinUtil {
 //	private static final String APPID="wxa77d1ad158f5eef7";
 //	private static final String APPSECRET = "3fadea5fae3f2aa98fe146ad9ed5d99e";d4385e0a24f0b9428957581f4be0e8ea
 	private static final String APPID="wx5993aae7e1692dd7";
-	private static final String APPSECRET = "d4385e0a24f0b9428957581f4be0e8ea";
+	private static final String APPSECRET = "25c84c6a2d3028287c287c6e9ac750eb";
 	private static final String ACCESS_TOKEN_URL="https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=APPID&secret=APPSECRET";
 	private static final String CREATE_MENU_URL="https://api.weixin.qq.com/cgi-bin/menu/create?access_token=ACCESS_TOKEN";
 	private static final String CREATE_USERGROUP="https://api.weixin.qq.com/cgi-bin/groups/create?access_token=ACCESS_TOKEN";
