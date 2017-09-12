@@ -84,9 +84,9 @@ public class WXDispatcher{
 		
 		if("" != content){
 			WeiXinUtil.sendInform(token, "oPOAgvx1Utuu0Mg25QTPs5yqDUyw", content, "新华物流", new Date().toLocaleString());
-			//WeiXinUtil.sendInform(token, "oPOAgv3R6Hw-BQSWj1GA9p-qH2Js", content, "新华物流", new Date().toLocaleString());
-			//WeiXinUtil.sendInform(token, "oPOAgv9wGB8tArvCQpr4OHr3wXBE", content, "新华物流", new Date().toLocaleString());
-			//WeiXinUtil.sendInform(token, "oPOAgv1qFSTPPYPuy_E6J0ZmrdBk", content, "新华物流", new Date().toLocaleString());
+			WeiXinUtil.sendInform(token, "oPOAgv3R6Hw-BQSWj1GA9p-qH2Js", content, "新华物流", new Date().toLocaleString());
+			WeiXinUtil.sendInform(token, "oPOAgv9wGB8tArvCQpr4OHr3wXBE", content, "新华物流", new Date().toLocaleString());
+			WeiXinUtil.sendInform(token, "oPOAgv1qFSTPPYPuy_E6J0ZmrdBk", content, "新华物流", new Date().toLocaleString());
 		}
 		return "success";
 	}
