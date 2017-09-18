@@ -229,8 +229,6 @@ public class WeiXinUtil {
 	
 	/**
      * 微信授权登录
-     * @param appId 
-     * @param appSecret
      * @param code
      * @return WeixinAouth2Token
      */

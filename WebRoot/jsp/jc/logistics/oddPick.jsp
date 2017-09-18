@@ -52,7 +52,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 		<a class="easyui-linkbutton" id='go' onclick="go()">&nbsp;查询&nbsp;</a>
 	</form>
 	</div>
-	<div>
+	<div style="height: 93%">
 		<table id="data">
 		</table>
 	</div>

@@ -69,10 +69,10 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				</tr>
 			</table>
 	</form>
-	<div align="center">
+	<div align="center" style="height: 95%;">
 		<form>
-			<table id="t" class="easyui-datagrid" width='90%' data-options="collapsible:false,height:'auto',singleSelect:true,fitColumns: true,striped:true,rownumbers:true,
-			border:true,pagination:true,pageSize:20,pageList:[10,15,20],toolbar:'#tb'">
+			<table id="t" class="easyui-datagrid" width='90%' data-options="collapsible:false,height:'auto',fit:true, singleSelect:true,fitColumns: true,striped:true,rownumbers:true,
+			border:true,pagination:true,pageSize:20,pageList:[10,15,20,100000000],toolbar:'#tb'">
 				<thead>
 					<tr>
 						<th data-options="field:'id',width:80,checkbox:true">编号</th>

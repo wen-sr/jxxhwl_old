@@ -59,7 +59,7 @@
 			<a class="easyui-linkbutton" id='go' onclick="go()">&nbsp;查询&nbsp;</a>
 		</form>
 		<!-- 数据显示 -->
-		<DIV ID="show" align="center">
+		<DIV ID="show" align="center" style="width: auto; height: 93%">
 			<table id="data"></table>
 		</DIV>
 		<!-- 分发窗口 -->

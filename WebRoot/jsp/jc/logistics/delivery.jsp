@@ -51,8 +51,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 			<input type="button" value="打印" id="print" onclick="window.open('fhprint.action')"/>
 		</form>
 	</div>
-	<div>
-		<table class="easyui-datagrid" width="98%"  id="t1" data-options="collapsible:false,height:'auto',singleSelect:false,fitColumns: true,striped:true,rownumbers:true,
+	<div style="height:93%;">
+		<table class="easyui-datagrid" width="98%"  id="t1" data-options="collapsible:false,height:'auto',singleSelect:false,fit: true, fitColumns: true,striped:true,rownumbers:true,
 			border:true,toolbar:'#tb'">
 			<thead>
 				<tr>

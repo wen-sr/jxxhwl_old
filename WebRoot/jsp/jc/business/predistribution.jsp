@@ -139,9 +139,9 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     	<a class="easyui-linkbutton" iconCls="icon-remove" onClick="tool.remove();">删除</a>
     </div>
 	<div align="center" style="padding-top:5px;">
-		<form>
-			<table id="data" class="easyui-datagrid" width='100%' data-options="collapsible:false,height:'auto',singleSelect:true,fitColumns: true,striped:true,rownumbers:true,
-			border:true,pagination:true,pageSize:20,pageList:[10,15,20],pagePosition:'bottom',toolbar:'#tb'">
+		<form style=" height: 93%; width: 100%">
+			<table id="data" class="easyui-datagrid" width='100%' data-options="collapsible:false,height:'auto',singleSelect:true,fitColumns: true,fit:true,striped:true,rownumbers:true,
+			border:true,pagination:true,pageSize:20,pageList:[10,15,20,100000000],pagePosition:'bottom',toolbar:'#tb'">
 			</table>
 		</form>
 	</div>	

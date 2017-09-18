@@ -51,9 +51,9 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 		<a class="easyui-linkbutton" id='go' onclick="go()">&nbsp;查询&nbsp;</a>
 	</div>
 	<!-- 数据显示 -->
-	<div align="center" style="padding-top:5px;">
-		<table id="data" class="easyui-datagrid" width='100%' data-options="collapsible:false,height:'auto',singleSelect:true,fitColumns: true,striped:true,rownumbers:true,
-		border:true,pagination:true,pageSize:20,pageList:[10,15,20],toolbar:'#tb'">
+	<div align="center" style="padding-top:5px; height: 93%;">
+		<table id="data" class="easyui-datagrid" width='100%' data-options="collapsible:false,fit:true, height:'auto',singleSelect:true,fitColumns: true,striped:true,rownumbers:true,
+		border:true,pagination:true,pageSize:20,pageList:[10,15,20,100000000],toolbar:'#tb'">
 		</table>
 	</div>
 	<!-- 选择征订代码 -->

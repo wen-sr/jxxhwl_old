@@ -8,13 +8,14 @@ function loadWaitShipData(){
 		url:'jc/wholeShip_loadWaitShipDataTotal.action',
 		height:'auto',	
 		fitColumns: true,
+		fit:true,
 		striped:true,
 		rownumbers:true,
 		border:true,
 		singleSelect:true,
 		pagination:true,
         pageSize:20,
-        pageList:[10,15,20],
+        pageList:[10,15,20,100000000],
 		showFooter: true,
 		toolbar:'#tb',
 		columns:[[{
@@ -194,14 +195,14 @@ function delivery(){
 		url:'jc/wholeShip_loadWaitShipData.action?issuenumber=' + row.issuenumber + "&subcode=" + row.subcode,
 		height:'auto',	
 		fitColumns: true,
-		fit: true,
+		fit:true,
 		striped:true,
 		rownumbers:true,
 		border:true,
 		singleSelect:false,
 		pagination:true,
-        pageSize:1000,
-        pageList:[1000],
+        pageSize:10000000,
+        pageList:[10000000],
 		showFooter: true,
 		toolbar:'#tb3',
 		columns:[[{
@@ -318,13 +319,14 @@ function go(){
 			url:"jc/wholeShip_loadWaitShipDataTotal.action?type=" + type + "&issuenumber=" + issuenumber + "&subcode=" + subcode + "&barcode=" + barcode,
 			height:'auto',	
 			fitColumns: true,
+			fit:true,
 			striped:true,
 			rownumbers:true,
 			border:true,
 			singleSelect:true,
 			pagination:true,
 	        pageSize:20,
-	        pageList:[10,15,20],
+	        pageList:[10,15,20,100000000],
 			showFooter: true,
 			toolbar:'#tb',
 			columns:[[{
@@ -374,13 +376,14 @@ function go(){
 			url:"jc/wholeShip_loadShippedDataBySubcode.action?type=" + type + "&issuenumber=" + issuenumber + "&subcode=" + subcode + "&barcode=" + barcode + "&batchno=" + batchno,
 			height:'auto',	
 			fitColumns: true,
+			fit:true,
 			striped:true,
 			rownumbers:true,
 			border:true,
 			singleSelect:false,
 			pagination:true,
 	        pageSize:20,
-	        pageList:[10,15,20],
+	        pageList:[10,15,20,100000000],
 			showFooter: true,
 			toolbar:'#tb',
 			columns:[[{
@@ -467,13 +470,14 @@ function loadshippedData(){
 		url:'jc/wholeShip_loadShippedData.action',
 		height:'auto',	
 		fitColumns: true,
+		fit:true,
 		striped:true,
 		rownumbers:true,
 		border:true,
 		singleSelect:false,
 		pagination:true,
         pageSize:20,
-        pageList:[10,15,20],
+        pageList:[10,15,20,100000000],
 		showFooter: true,
 		toolbar:'#tb',
 		columns:[[{
@@ -686,7 +690,7 @@ function wholeCaseList(){
 function allocationList(){
 	var batchno = $("#t_batchno").textbox('getValue');
 	if(batchno != ""){
-		window.open('jc/print_allocationList.action?batchno='+batchno,'_blank');
+		window.open('jc/print_allocationListMid.action?batchno='+batchno,'_blank');
 	}else{
 		$.messager.alert("操作提示","请先选择批次号","error");
 	}
@@ -697,7 +701,7 @@ function allocationList(){
 function s_ticketList(){
 	var batchno = $("#t_batchno").textbox('getValue');
 	if(batchno != ""){
-		window.open('jc/print_s_ticketList.action?batchno='+batchno,'_blank');
+		window.open('jc/print_s_ticketListMid.action?batchno='+batchno,'_blank');
 	}else{
 		$.messager.alert("操作提示","请先选择批次号","error");
 	}

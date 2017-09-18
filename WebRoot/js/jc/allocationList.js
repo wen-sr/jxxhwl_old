@@ -21,6 +21,7 @@ $(function(){
 				    	"</div>" +
 				    	"<div class='div_third'>" +
 					    	"<div class='price'>" + data['list'][i].price + "</div>" +
+					    	"<div class='amt'>" + data['list'][i].price * data['list'][i].qtyallocated + "</div>" +
 				    		"<div class='subcode'>" + data['list'][i].issuenumber + data['list'][i].subcode + "</div>" +
 				    	"</div>" +
 			    		"<div class='div_fouth'>" +
@@ -44,6 +45,7 @@ $(function(){
 						    	"</div>" +
 						    	"<div class='div_third'>" +
 							    	"<div class='price'>" + data['list'][i].price + "</div>" +
+                            		"<div class='amt'>" + data['list'][i].price * data['list'][i].qtyallocated + "</div>" +
 						    		"<div class='subcode'>" + data['list'][i].issuenumber + data['list'][i].subcode + "</div>" +
 						    	"</div>" +
 					    		"<div class='div_fouth'>" +

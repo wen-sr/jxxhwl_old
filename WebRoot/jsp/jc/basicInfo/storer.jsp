@@ -36,9 +36,9 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	</div>
 	<input type="hidden" value="<s:property value='#session.id'/>" id="userid"/>
 	<input type="hidden" value="<s:property value='#session.name'/>" id="username"/>
-	<div align="center" style="padding-top:5px;">
-		<table id="data" class="easyui-datagrid" width='100%' data-options="collapsible:false,height:'auto',singleSelect:true,fitColumns: true,striped:true,rownumbers:true,
-		border:true,pagination:true,pageSize:20,pageList:[10,15,20],toolbar:'#tb'">
+	<div align="center" style="padding-top:5px;height:95%">
+		<table id="data" class="easyui-datagrid" width='100%' data-options="collapsible:false,height:'auto',singleSelect:true,fit:true, fitColumns: true,striped:true,rownumbers:true,
+		border:true,pagination:true,pageSize:20,pageList:[10,15,20,100000000],toolbar:'#tb'">
 			<thead>
 				<tr>
 					<th data-options="field:'id',width:80,checkbox:true">编号</th>

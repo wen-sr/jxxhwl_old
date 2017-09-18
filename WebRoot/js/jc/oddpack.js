@@ -26,7 +26,7 @@ function addUnpackData(issuenumber,code){
 		singleSelect:false,
 		pagination:true,
         pageSize:20,
-        pageList:[10,15,20],
+        pageList:[10,15,20,100000000],
 		showFooter: true,
 		toolbar:'#tb',
 		columns:[[{
@@ -107,7 +107,7 @@ function addPackedData(issuenumber,code) {
 		singleSelect:false,
 		pagination:true,
         pageSize:20,
-        pageList:[10,15,20],
+        pageList:[10,15,20,100000000],
 		showFooter: true,
 		toolbar:'#tb',
 		columns:[[{

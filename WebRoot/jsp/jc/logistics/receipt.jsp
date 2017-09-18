@@ -143,7 +143,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 		</table>
 	</div>
 	<!-- 数据显示 -->
- 	<DIV ID="show" align="center">
+ 	<DIV ID="show" align="center" style="height:93%; width: 100%">
 		<table id="data"  width='100%'></table>
 	</DIV>
 	

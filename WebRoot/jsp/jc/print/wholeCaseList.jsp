@@ -33,14 +33,14 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 		}
 		.td1{
 			height:1px;
-			border:none;
-			border-top:1px solid #555555;
-			border-bottom:1px solid #555555;
+			/*border:none;*/
+			border-top:1px solid #000;
+			border-bottom:1px solid #000;
 		}
 		.td2{
 			height:1px;
 			border:none;
-			border-bottom:1px solid #555555;
+			border-bottom:1px solid #000;
 		}
 	</style>
 	<!--
@@ -62,12 +62,12 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	    		<h3>整件储运发货清单</h3>
 	    	</div>
 	    	<div align="center" >
-	    		<table width='90%' style="border:0px;"  >
+	    		<table width='770px' style="border:0px;"  >
 	    			<tr>
 	    				<td colspan="5">调度批号：${ batchno }</td><td>列印时间：<%= dt %></td>
 	    			</tr>
 	    		</table>
-	    		<table id="t1" width="90%" frame=hsides rules='rows'>
+	    		<table id="t1" width="770px" frame=hsides rules='rows'>
 	    			<tr>
 	    				<td width='10%'>征订号</td><td width='20%'>书名</td><td  width='10%'>出版社名称</td><td  width='10%'>价格</td><td  width='10%'>数量</td><td  width='10%'>捆扎数</td><td width='20%'>应发数</td>
 	    				
@@ -75,7 +75,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	    		</table>
 	    	</div>
 	    	<div align="center" style="padding:50px 0px;" >
-	    		<table id="t2" width="90%" cellspacing=0 >
+	    		<table id="t2" width="770px" cellspacing=0 frame=hsides rules='rows'>
 	    			<tr><td class='td1' width='10%'>客户代码</td><td class='td1' width='10%'>客户名称</td><td class='td1' width='10%'>运号</td><td class='td1' width='10%'>数量</td><td class='td1' width='10%'>捆扎</td><td  class='td1' width='10%'>包件</td></tr>
 	    		</table>
 	    	</div>

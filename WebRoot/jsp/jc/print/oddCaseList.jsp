@@ -61,7 +61,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     		<h1>零件储运发货清单</h1>
     	</div>
     	<div align="center" >
-    		<table width='90%' style="border:0px;" >
+    		<table width='90%' style="border:0px;" frame=hsides rules='rows'>
     			<tr>
     				<td colspan="5">调度批号：${batchno }</td><td>列印时间：<%= dt %></td>
     			</tr>
@@ -73,7 +73,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     		</table>
     	</div>
     	<div align="center" style="padding:50px 0px" >
-    		<table id="t2" width="90%" cellspacing=0>
+    		<table id="t2" width="90%" cellspacing=0 frame=hsides rules='rows'>
     			<tr><td class="td1" width='10%'>客户代码</td><td class="td1" width='10%'>客户名称</td><td class="td1" width='10%'>运号</td><td  class="td1" width='10%'>数量</td><td class="td1" width='10%'>捆扎</td><td  class="td1" width='10%'>包件</td></tr>
     		</table>
     	</div>

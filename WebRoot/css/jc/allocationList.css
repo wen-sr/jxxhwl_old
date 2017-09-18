@@ -1,5 +1,5 @@
 * {
-	font-family: "ºÚÌå";
+	font-family: "ï¿½ï¿½ï¿½ï¿½";
 	font-size:14px;
 }
 
@@ -50,6 +50,11 @@
 .div_left .price {
 	float: left;
 	padding-left: 2.2cm;
+}
+
+.div_left .amt {
+	float: left;
+	padding-left: 1cm;
 }
 
 .div_left .subcode {
@@ -130,6 +135,11 @@
 .div_right .price {
 	float: left;
 	padding-left: 2.2cm;
+}
+
+.div_right .amt {
+	float: left;
+	padding-left: 1cm;
 }
 
 .div_right .subcode {
