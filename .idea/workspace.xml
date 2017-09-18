@@ -7,7 +7,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d97bb14c-1805-428d-81fc-42b235c8b6c7" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/jxxhwl/wx/action/WXDispatcher.java" afterPath="$PROJECT_DIR$/src/com/jxxhwl/wx/action/WXDispatcher.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/jxxhwl/wx/util/WeiXinUtil.java" afterPath="$PROJECT_DIR$/src/com/jxxhwl/wx/util/WeiXinUtil.java" />
     </list>
     <ignored path="$PROJECT_DIR$/WebRoot/WEB-INF/classes/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,21 +21,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="WeiXinUtil.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="WeiXinUtil.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/jxxhwl/wx/util/WeiXinUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="42" column="13" lean-forward="false" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="WXDispatcher.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/jxxhwl/wx/action/WXDispatcher.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="539">
-              <caret line="88" column="119" lean-forward="true" selection-start-line="88" selection-start-column="119" selection-end-line="88" selection-end-column="119" />
+            <state relative-caret-position="167">
+              <caret line="47" column="0" lean-forward="true" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -54,6 +46,7 @@
       <list>
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/com/jxxhwl/wx/action/WXDispatcher.java" />
+        <option value="$PROJECT_DIR$/src/com/jxxhwl/wx/util/WeiXinUtil.java" />
       </list>
     </option>
   </component>
@@ -97,8 +90,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
@@ -123,21 +116,13 @@
               <item name="jxxhwl" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="jxxhwl" type="462c0819:PsiDirectoryNode" />
-              <item name="wx" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jxxhwl" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jxxhwl" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="jxxhwl" type="462c0819:PsiDirectoryNode" />
-              <item name="wx" type="462c0819:PsiDirectoryNode" />
-              <item name="action" type="462c0819:PsiDirectoryNode" />
+              <item name="jc" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -162,79 +147,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Tomcat Server.Unnamed">
-    <configuration name="Unnamed" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 6.0.37" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="1.6">
-      <option name="UPDATING_POLICY" value="restart-server" />
-      <deployment>
-        <artifact name="jxxhwl:war exploded">
-          <settings>
-            <option name="CONTEXT_PATH" value="/" />
-          </settings>
-        </artifact>
-      </deployment>
-      <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="Unnamed_jxxhwl_3" />
-      </server-settings>
-      <predefined_log_file id="Tomcat" enabled="true" />
-      <predefined_log_file id="Tomcat Catalina" enabled="true" />
-      <predefined_log_file id="Tomcat Manager" enabled="false" />
-      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
-      <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="56457" />
-      </RunnerSettings>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <method>
-        <option name="BuildArtifacts" enabled="true">
-          <artifact name="jxxhwl:war exploded" />
-        </option>
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Tomcat Server.tomcat6">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -316,6 +229,79 @@
       <properties />
       <listeners />
     </configuration>
+    <configuration name="tomcat6" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 6.0.37" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="1.6">
+      <option name="BROWSER_ID" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="jxxhwl:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_jxxhwl_3" />
+      </server-settings>
+      <predefined_log_file id="Tomcat" enabled="true" />
+      <predefined_log_file id="Tomcat Catalina" enabled="true" />
+      <predefined_log_file id="Tomcat Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="56457" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method>
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="jxxhwl:war exploded" />
+        </option>
+      </method>
+    </configuration>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
@@ -330,14 +316,16 @@
       <workItem from="1505177188475" duration="281000" />
       <workItem from="1505177500037" duration="1155000" />
       <workItem from="1505182265691" duration="135000" />
+      <workItem from="1505696647894" duration="246000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1571000" />
+    <option name="totallyTimeSpent" value="1817000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -351,7 +339,7 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.7530726" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.49385476" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960895" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -359,8 +347,8 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40223464" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960895" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.123667374" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32960895" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19989339" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -393,17 +381,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/jxxhwl/wx/action/WXDispatcher.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1224">
-          <caret line="98" column="5" lean-forward="true" selection-start-line="98" selection-start-column="5" selection-end-line="98" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="13" lean-forward="true" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding />
+        <state relative-caret-position="1054">
+          <caret line="88" column="119" lean-forward="true" selection-start-line="88" selection-start-column="119" selection-end-line="88" selection-end-column="119" />
+          <folding>
+            <marker date="1505696655769" expanded="true" signature="2965:3164" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -417,8 +399,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/jxxhwl/wx/action/WXDispatcher.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="539">
-          <caret line="88" column="119" lean-forward="true" selection-start-line="88" selection-start-column="119" selection-end-line="88" selection-end-column="119" />
+        <state relative-caret-position="1224">
+          <caret line="98" column="5" lean-forward="true" selection-start-line="98" selection-start-column="5" selection-end-line="98" selection-end-column="5" />
+          <folding>
+            <marker date="1505696655769" expanded="true" signature="2965:3164" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="13" lean-forward="true" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/jxxhwl/wx/action/WXDispatcher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="88" column="119" lean-forward="true" selection-start-line="86" selection-start-column="119" selection-end-line="88" selection-end-column="119" />
+          <folding>
+            <marker date="1505696655769" expanded="true" signature="2965:3164" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/jxxhwl/wx/util/WeiXinUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="47" column="0" lean-forward="true" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -482,6 +491,7 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
