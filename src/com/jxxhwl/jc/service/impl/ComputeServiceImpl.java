@@ -91,6 +91,7 @@ public class ComputeServiceImpl implements ComputeService{
 			//改捆扎的库存足够则进行计算
 			if(inventoryDao.updateInventoryDetailChange(i, i.getQtyallocated(), 0) > 0){
 				if(computeDao.compute(d.getId()) > 0){
+					inventoryDao.updateInventoryFromInventoryDetail(i);
 					continue;
 				}else{
 					return (d.getShortname() + "的" + d.getSubcode() + "计算失败；");
@@ -99,9 +100,8 @@ public class ComputeServiceImpl implements ComputeService{
 				return "库存更新失败";
 			}
 		}
-		
+
 		//更新JiaoCaiInventory与JiaoCaiInventory_detail保持一致
-		inventoryDao.updateInventoryFromInventoryDetail();
 		return sb.append("计算成功").toString();
 	}
 	/**
@@ -134,7 +134,7 @@ public class ComputeServiceImpl implements ComputeService{
 			//更新库存明细
 			if(inventoryDao.updateInventoryDetailChange(i, 0, d.getQtyallocated())>0){
 				//更新JiaoCaiInventory与持一JiaoCaiInventory_detail保致
-				if(inventoryDao.updateInventoryFromInventoryDetail()>0){
+				if(inventoryDao.updateInventoryFromInventoryDetail(i)>0){
 					if(computeDao.cancelCompute(s) > 0){
 						if(computeDao.updateDistribution(d.getComputeno(), d.getCode()) > 0){
 							continue;
@@ -217,5 +217,18 @@ public class ComputeServiceImpl implements ComputeService{
 		}else{
 			return "保存拆分记录失败";
 		}
+	}
+
+	/**
+	 * 所有品种
+	 * @param distribution
+	 * @return
+	 */
+	@Override
+	public Map<String, Object> findAll(Distribution distribution) {
+		List<Distribution> list = computeDao.findAll(distribution);
+		Map<String, Object> map = new HashMap<String, Object>();
+		map.put("rows", list);
+		return map;
 	}
 }

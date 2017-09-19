@@ -4,6 +4,7 @@ import java.util.List;
 
 import javax.annotation.Resource;
 
+import com.sun.org.apache.xpath.internal.operations.Equals;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -32,4 +33,15 @@ public class InventoryServiceImpl implements InventoryService{
 		Inventory i = inventoryDao.queryInventoryAndBundle(inventory);
 		return i;
 	}
+
+	/**
+	 * 查询库存是否一致
+	 * @param inventory
+	 * @return
+	 */
+	@Override
+	public int isEqual(Inventory inventory){
+		return inventoryDao.isEqual(inventory);
+	}
+
 }

@@ -133,4 +133,14 @@ public class ComputeAction extends BaseAction implements ModelDriven<Distributio
 		ok = computeService.split(distribution);
 		return OK;
 	}
+
+	/**
+	 * 所有品种
+	 * @return
+	 */
+	public String loadAll(){
+		Map<String,Object> map =  computeService.findAll(distribution);
+		ActionContext.getContext().getValueStack().set("result", map);
+		return SUCCESS;
+	}
 }

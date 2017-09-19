@@ -36,6 +36,16 @@ public class Distribution {
 	private String phone;
 	private String address;
 	private String contact;
+	private int qtyshipped;
+
+	public int getQtyshipped() {
+		return qtyshipped;
+	}
+
+	public void setQtyshipped(int qtyshipped) {
+		this.qtyshipped = qtyshipped;
+	}
+
 	public String getPhone() {
 		return phone;
 	}

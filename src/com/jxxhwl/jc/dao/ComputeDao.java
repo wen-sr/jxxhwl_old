@@ -136,5 +136,6 @@ public interface ComputeDao {
 	 * @return
 	 */
 	public Distribution findById(String s);
-	
+
+    List<Distribution> findAll(Distribution distribution);
 }

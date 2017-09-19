@@ -43,6 +43,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 		<select id="type" class="easyui-combobox" style="width:100px;">
 			<option value="0">需配发品种</option>
 			<option value="1">已配发品种</option>
+			<option value="2">所有品种</option>
+			<option value="3">可取消品种</option>
 		</select>
 		期号：<input type="text" id="issuenumber" class="easyui-combobox" data-options="url: 'jc/issuenumber_info.action',method: 'get',valueField: 'issuenumber',textField: 'issuenumber',
 				panelWidth: 150,panelHeight: '100' "/>

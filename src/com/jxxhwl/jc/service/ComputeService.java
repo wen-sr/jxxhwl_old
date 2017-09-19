@@ -88,4 +88,10 @@ public interface ComputeService {
 	 */
 	public String split(Distribution distribution);
 
+	/**
+	 * 所有品种
+	 * @param distribution
+	 * @return
+	 */
+    Map<String,Object> findAll(Distribution distribution);
 }

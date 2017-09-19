@@ -264,7 +264,7 @@ public class InventoryDaoImpl extends BaseDao implements InventoryDao {
 	 */
 	@Override
 	public List<Inventory> findByPage(int pageSize, int currentPage, Inventory inventory) {
-		String sql = "select top " + pageSize + " a.id,a.issuenumber,a.subcode,b.barcode,b.price,b.descr,a.qtyfree,b.publisher,c.shortname,a.qtyallocated from JiaoCaiInventory_detail a,JiaoCaiSku b,JiaoCaiStorer c where a.issuenumber=b.issuenumber and a.subcode=b.subcode and b.publisher=c.storerkey and a.qtyfree > 0 ";
+		String sql = "select top " + pageSize + " a.id,a.issuenumber,a.subcode,b.barcode,b.price,b.descr,a.qtyfree,b.publisher,c.shortname,a.qtyallocated from JiaoCaiInventory a,JiaoCaiSku b,JiaoCaiStorer c where a.issuenumber=b.issuenumber and a.subcode=b.subcode and b.publisher=c.storerkey and a.qtyfree > 0 ";
 		String sqladd = "";
 		if(inventory.getIssuenumber() != null && !"".equals(inventory.getIssuenumber())){
 			sql += " and a.issuenumber = '" + inventory.getIssuenumber() + "'";
@@ -278,7 +278,7 @@ public class InventoryDaoImpl extends BaseDao implements InventoryDao {
 			sql += " and b.barcode = '" + inventory.getBarcode() + "'";
 			sqladd += " and b.barcode = '" + inventory.getBarcode() + "'";
 		}
-		sql += " and a.id not in (select top "+ (currentPage-1)*pageSize +" id from JiaoCaiInventory_detail where qtyfree > 0 " + sqladd +	")";
+		sql += " and a.id not in (select top "+ (currentPage-1)*pageSize +" id from JiaoCaiInventory where qtyfree > 0 " + sqladd +	")";
 		List<Inventory> list = null;
 		try {
 			list = getJdbcTemplate().query(sql, new RowMapper() {
@@ -486,10 +486,23 @@ public class InventoryDaoImpl extends BaseDao implements InventoryDao {
 	}
 	/**
 	 * 更新inventor与inventory_detail保持一致
+	 * @param inventory
 	 */
 	@Override
-	public int updateInventoryFromInventoryDetail() {
-		String sql = "update JiaoCaiInventory set qtyallocated=b.qtyallocated,qtyshipped=b.qtyshipped,qtyfree=b.qtyfree from JiaoCaiInventory a,(select issuenumber,subcode,SUM(qtyallocated) qtyallocated,SUM(qtyshipped) qtyshipped,SUM(qtyfree) qtyfree from JiaoCaiInventory_detail group by issuenumber,subcode) b where a.issuenumber=b.issuenumber and a.subcode=b.subcode and a.qtyfree > 0 ";
-		return this.getJdbcTemplate().update(sql);
+	public int updateInventoryFromInventoryDetail(Inventory inventory) {
+		String sql = "update JiaoCaiInventory set qtyallocated=b.qtyallocated,qtyshipped=b.qtyshipped,qtyfree=b.qtyfree from JiaoCaiInventory a,(select issuenumber,subcode,SUM(qtyallocated) qtyallocated,SUM(qtyshipped) qtyshipped,SUM(qtyfree) qtyfree from JiaoCaiInventory_detail group by issuenumber,subcode) b where a.issuenumber=b.issuenumber and a.subcode=b.subcode and a.issuenumber = ? and a.subcode = ?  ";
+		return this.getJdbcTemplate().update(sql, inventory.getIssuenumber(), inventory.getSubcode());
+	}
+
+	/**
+	 * 判断库存是否一致
+	 * @param inventory
+	 * @return
+	 */
+	@Override
+	public int isEqual(Inventory inventory) {
+		String sql = "select count(*) from JiaoCaiInventory a, (select issuenumber,subcode,SUM(qtyallocated) qtyallocated,SUM(qtyshipped) qtyshipped,SUM(qtyfree) qtyfree from JiaoCaiInventory_detail group by issuenumber,subcode) b where a.issuenumber = b.issuenumber and a.subcode = b.subcode " +
+				"and a.qtyfree = b.qtyfree and a.issuenumber = ? and a.subcode = ?";
+		return this.getJdbcTemplate().queryForObject(sql, new Object[]{inventory.getIssuenumber(), inventory.getSubcode()}, Integer.class);
 	}
 }

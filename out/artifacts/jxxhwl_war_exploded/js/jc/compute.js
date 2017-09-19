@@ -317,7 +317,7 @@ function dataDetail(){
 		border:true,
 		singleSelect:false,
 		pagination:true,
-        pageSize:1000,
+        pageSize:100000000,
         pageList:[10,15,20,100000000],
 		showFooter: true,
 		toolbar:'#tb3',
@@ -542,7 +542,7 @@ function go(){
 	    $("#currentType").val("0");
 	    $('#cancelcompute').linkbutton('disable');
 	    $('#abcd').linkbutton('enable');
-	}else {
+	}else if("1" == type) {
 		$("#data").datagrid({
 			url:"jc/compute_loadComputedData.action?type=" + type + "&issuenumber=" + issuenumber + "&subcode=" + subcode + "&barcode=" + barcode,
 			height:'auto',	
@@ -615,7 +615,80 @@ function go(){
 	    $("#currentType").val("1");
 	    $('#cancelcompute').linkbutton('enable');
 	    $('#abcd').linkbutton('disable');
-	}
+	}else if("2" == type) {
+        $("#data").datagrid({
+            url:"jc/compute_loadAll.action",
+            height:'auto',
+            fitColumns: true,
+            striped:true,
+            fit: true,
+            rownumbers:f,
+            border:true,
+            singleSelect:false,
+            pagination:false,
+            pageSize:20,
+            pageList:[10,15,20,100000000],
+            showFooter: true,
+            toolbar:'#tb5',
+            columns:[[{
+                field:"id",
+                title:"编号",
+                checkbox:true,
+                width:50
+            },{
+                field:"issuenumber",
+                title:"期号",
+                width:50
+            },{
+                field:"subcode",
+                title:"征订代码",
+                width:50
+            },{
+                field:"barcode",
+                title:"条码",
+                width:50
+            },{
+                field:"descr",
+                title:"书名",
+                width:50
+            },{
+                field:"price",
+                title:"定价",
+                width:50
+            },{
+                field:"pack",
+                title:"包册数",
+                width:30
+            },{
+                field:"storerkey",
+                title:"出版社代码",
+                width:30
+            },{
+                field:"publisher",
+                title:"出版社",
+                width:30
+            },{
+                field:"code",
+                title:"分发店代码",
+                width:50
+            },{
+                field:"shortname",
+                title:"分发店",
+                width:30
+            },{
+                field:"qty1",
+                title:"已分发数量",
+                width:50
+            },{
+                field:"qty2",
+                title:"已配发数量",
+                width:50
+            }]]
+        });
+        $("#currentType").val("2");
+        $('#cancelcompute').linkbutton('disable');
+        $('#abcd').linkbutton('disable');
+    }
 }
 
 /**

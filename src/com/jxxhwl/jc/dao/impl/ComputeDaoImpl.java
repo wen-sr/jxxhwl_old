@@ -42,6 +42,9 @@ public class ComputeDaoImpl extends BaseDao implements ComputeDao{
 				
 				@Override
 				public Distribution mapRow(ResultSet rs, int arg1) throws SQLException {
+					if(rs.getInt("qtyfree")  == 0) {
+						rs.next();
+					}
 					Distribution d = new Distribution();
 					d.setIssuenumber(rs.getString("issuenumber"));
 					d.setSubcode(rs.getString("subcode"));
@@ -546,5 +549,30 @@ public class ComputeDaoImpl extends BaseDao implements ComputeDao{
 			throw new RuntimeException(e);
 		}
 		return dis;
+	}
+
+	@Override
+	public List<Distribution> findAll(Distribution distribution) {
+		String sql = "select a.issuenumber,a.subcode,a.code,b.shortname,a.pack,a.qtyallocated qty1,b.qtyallocated qty2,b.status,c.descr,c.barcode,c.price,c.publisher,(select d.shortname from JiaoCaiStorer d where c.publisher = d.storerkey) publishername from JiaoCaiDistribute a left join JiaoCaiCompute b on a.computeno = b.computeno and a.issuenumber = b.issuenumber and a.subcode = b.subcode and a.code = b.code left join jiaocaisku c on a.issuenumber = c.issuenumber and a.subcode = c.subcode";
+		List<Distribution> list = null;
+		list = getJdbcTemplate().query(sql, new RowMapper<Distribution>() {
+			@Override
+			public Distribution mapRow(ResultSet rs, int i) throws SQLException {
+				Distribution d = new Distribution();
+				d.setIssuenumber(rs.getString("issuenumber"));
+				d.setSubcode(rs.getString("subcode"));
+				d.setQtyallocated(rs.getInt("qty1"));
+				d.setQtyshipped(rs.getInt("qty2"));
+				d.setCode(rs.getString("code"));
+				d.setShortname(rs.getString("shortname"));
+				d.setStatus(rs.getString("status"));
+				d.setStorerkey(rs.getString("storerkey"));
+				d.setPublisher(rs.getString("shortname_publisher"));
+				d.setDescr(rs.getString("descr"));
+				d.setPrice(rs.getDouble("price"));
+				return d;
+			}
+		});
+		return list;
 	}
 }

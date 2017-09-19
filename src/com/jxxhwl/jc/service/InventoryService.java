@@ -19,4 +19,10 @@ public interface InventoryService {
 	 */
 	public Inventory queryInventoryAndBundle(Inventory inventory);
 
+	/**
+	 * 查询库存是否一致
+	 * @param inventory
+	 * @return
+	 */
+    int isEqual(Inventory inventory);
 }

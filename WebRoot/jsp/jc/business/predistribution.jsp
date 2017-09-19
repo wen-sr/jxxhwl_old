@@ -29,8 +29,17 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	<script type="text/javascript" src="${pageContext.request.contextPath}/easyui/jquery.easyui.min.js"></script>
 	<script type="text/javascript" src="${pageContext.request.contextPath}/easyui/locale/easyui-lang-zh_CN.js"></script>
 	<script type="text/javascript" src="${pageContext.request.contextPath}/js/jc/base.js"></script>
-	<script type="text/javascript" src="${pageContext.request.contextPath}/js/jc/predistribution.js"></script>	
-
+	<script type="text/javascript" src="${pageContext.request.contextPath}/js/jc/predistribution.js"></script>
+	  <style>
+		  html {
+			  height:100%;
+			  width:100%
+		  }
+		  body {
+			  height:100%;
+			  width:100%
+		  }
+	  </style>
   </head>
   
   <body>
@@ -138,12 +147,10 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     	<a class="easyui-linkbutton" iconCls="icon-edit" onClick="tool.edit();">修改</a>
     	<a class="easyui-linkbutton" iconCls="icon-remove" onClick="tool.remove();">删除</a>
     </div>
-	<div align="center" style="padding-top:5px;">
-		<form style=" height: 93%; width: 100%">
-			<table id="data" class="easyui-datagrid" width='100%' data-options="collapsible:false,height:'auto',singleSelect:true,fitColumns: true,fit:true,striped:true,rownumbers:true,
-			border:true,pagination:true,pageSize:20,pageList:[10,15,20,100000000],pagePosition:'bottom',toolbar:'#tb'">
-			</table>
-		</form>
-	</div>	
+	<div align="center" style="padding-top:5px;height: 93%; width: 100%">
+		<table id="data" class="easyui-datagrid" width='100%' data-options="collapsible:false,height:'auto',singleSelect:true,fitColumns: true,fit:true,striped:true,rownumbers:true,
+		border:true,pagination:true,pageSize:20,pageList:[10,15,20,100000000],pagePosition:'bottom',toolbar:'#tb'">
+		</table>
+	</div>
   </body>
 </html>

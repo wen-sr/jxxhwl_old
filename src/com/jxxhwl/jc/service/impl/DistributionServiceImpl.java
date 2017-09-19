@@ -6,6 +6,7 @@ import java.util.Map;
 
 import javax.annotation.Resource;
 
+import com.jxxhwl.jc.service.InventoryService;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -40,6 +41,9 @@ public class DistributionServiceImpl implements DistributionService {
 	private InventoryDao inventoryDao;
 	@Resource
 	private OrdersDao ordersDao;
+	@Resource
+	InventoryService inventoryService;
+
 	/**
 	 * 保存分发信息
 	 */
@@ -125,14 +129,21 @@ public class DistributionServiceImpl implements DistributionService {
 		if(!"0".equals(status)){
 			return "该记录已经开始作业，无法删除！";
 		}
-		//更新库存的操作放在取消计算那一步，这里就不需要这个操作了
-//		if("1".equals(type)){
-//			Distribution dd = distributionDao.findById(id);
-//			Inventory i = new Inventory(dd.getIssuenumber(),dd.getSubcode());
+		//更新库存的操作放在取消计算那一步，这里就不需要这个操作了,
+
+		if("1".equals(type)){
+		//判断表头库存与明细库存是否一致，如果不一致，进行更新
+			Distribution dd = distributionDao.findById(id);
+			Inventory inventory = new Inventory(dd.getIssuenumber(),dd.getSubcode());
+			if(inventoryService.isEqual(inventory) == 0){
+                if(inventoryDao.updateInventoryFromInventoryDetail(inventory) <= 0){
+                    return "库存更新失败";
+                }
+            }
 //			if(inventoryDao.updateInventoryChange(i, 0, dd.getQtyallocated())<=0){
 //				return "库存更新失败";
 //			}
-//		}
+		}
 		int i = distributionDao.delete(id);
 		if(i > 0){
 			return "记录删除成功！";

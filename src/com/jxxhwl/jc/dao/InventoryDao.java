@@ -133,7 +133,14 @@ public interface InventoryDao {
 	/**
 	 * 更新inventor与inventory_detail保持一致
 	 * @return
+	 * @param inventory
 	 */
-	public int updateInventoryFromInventoryDetail();
-	
+	public int updateInventoryFromInventoryDetail(Inventory inventory);
+
+	/**
+	 * 查询库存是否一致
+	 * @param inventory
+	 * @return
+	 */
+    int isEqual(Inventory inventory);
 }
