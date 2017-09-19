@@ -1,0 +1,21 @@
+body {
+	font-family:"Microsoft YaHei";
+}
+
+#formtable input{
+	width:200px;
+}
+
+#formtable select{
+	width:200px;
+}
+
+#formtable .easyui-linkbutton {
+	width:60px;
+	height:30px;
+	
+}
+
+#formtable .easyui-linkbutton .l-btn-text{
+	font-size:17px;
+}

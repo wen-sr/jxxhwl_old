@@ -1,0 +1,38 @@
+@charset "utf-8";
+/* CSS Document */
+body, div, p, h1, h2, h3, h4, h5, h6, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, table, th, td {
+    margin: 0;
+    padding: 0;
+}
+body, button, input, select, textarea {
+    font: 12px/24px,tahoma, Helvetica, arial, sans-serif;
+}
+
+body{
+	-webkit-appearance: none;
+}
+b, h4 {
+    font-weight: normal;
+}
+
+a {
+    text-decoration: none;
+    color: #333333;
+    outline: none;
+}
+a:visited {
+    color: #757575;
+    text-decoration: none;
+}
+a:link {
+    color: #000;
+    text-decoration: none;
+}
+h1,h2,button {
+	align:center;
+	text-align: center;
+}
+
+.shuoming p {
+	line-height: 24px;
+}

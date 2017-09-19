@@ -1,0 +1,340 @@
+body{
+	font-family: 'Microsoft YaHei', sans-serif;
+}
+
+.filter {
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.7);
+	padding: 90px 0;
+}
+
+/*导航条整体样式*/
+.navbar-default{
+    background-color: #fff;
+    border: none;
+    box-shadow: 0px 2px 8px 0px rgba(50,50,50,0.25);
+}
+
+/*logo字体设置*/
+.navbar-default .navbar-brand {
+    width:200px;
+}
+
+
+/*导航项目样式设置*/
+.navbar-default .navbar-nav>li>a {
+    font-size: 17px;
+    color: #666;
+    height: 70px;
+    line-height: 35px;
+}
+
+/*小屏幕导航按钮*/
+.navbar-toggle{
+    margin-top: 17px;
+}
+.navbar-default .navbar-toggle:hover {
+    border-color: #40D2B1;
+    background-color: rgb(69, 210, 184);
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #1C9982;
+}
+
+/*home*/
+#home {
+	background: url("../images/home-bg.jpg");
+	background-size: cover;
+	width: 100%;
+	margin-top: 70px;
+	color: #fff;
+	text-align: center;
+}
+
+.home-filter {
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.3);
+	padding: 90px 0;
+}
+
+.home-filter h2 {
+	font-weight: bold;
+}
+
+.home-filter p {
+	font-weight: 400;
+	line-height: 31px;
+	padding-top: 10px; 
+}
+
+.home-filter img {
+	padding-top: 20px;
+	display: inline-block;
+}
+
+/*zp*/
+.html5-icon{
+	background: #27efc1;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 51%;
+    color: #fff;
+    margin-right: 20px;
+}
+
+#zp {
+	padding: 80px 0;
+}
+.zp h2 {
+	font-weight: bold;
+}
+
+#zp p {
+	line-height: 81px;
+	font-size: 25px;
+}
+
+#zp .bootstrap {
+	margin: 80px 0; 
+}
+
+#zp .bootstrap p {
+	line-height: 38px;
+}
+
+/*qp*/
+.html5-icon{
+	background: #27efc1;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 51%;
+    color: #fff;
+    margin-right: 20px;
+}
+
+#qp {
+	padding: 80px 0;
+}
+.qp h2 {
+	font-weight: bold;
+}
+
+#qp .bootstrap {
+	margin: 80px 0; 
+}
+
+#qp .bootstrap p {
+	line-height: 36px;
+}
+#qp p {
+	line-height: 54px;
+	font-size: 25px;
+}
+
+/*th*/
+.html5-icon{
+	background: #27efc1;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 51%;
+    color: #fff;
+    margin-right: 20px;
+}
+
+#th {
+	padding: 80px 0;
+}
+.th h2 {
+	font-weight: bold;
+}
+
+
+#th .bootstrap {
+	margin: 80px 0; 
+}
+
+#th .bootstrap p {
+	line-height: 66px;
+}
+#th p {
+	line-height: 64px;
+	font-size: 25px;
+}
+/*bz*/
+.html5-icon{
+	background: #27efc1;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 51%;
+    color: #fff;
+    margin-right: 20px;
+}
+
+#bz {
+	padding: 80px 0;
+}
+.bz h2 {
+	font-weight: bold;
+}
+
+#bz p {
+	line-height: 81px;
+}
+
+#bz .bootstrap {
+	margin: 80px 0; 
+}
+
+#bz .bootstrap p {
+	line-height: 65px;
+}
+
+#bz p {
+	line-height: 81px;
+	font-size: 25px;
+}
+
+/*jc*/
+.html5-icon{
+	background: #27efc1;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 51%;
+    color: #fff;
+    margin-right: 20px;
+}
+
+#jc {
+	padding: 80px 0;
+}
+.bz h2 {
+	font-weight: bold;
+}
+
+#jc p {
+	line-height: 81px;
+}
+
+#jc .bootstrap {
+	margin: 80px 0; 
+}
+
+#jc .bootstrap p {
+	line-height: 80px;
+}
+
+#jc p {
+	line-height: 81px;
+	font-size: 25px;
+}
+
+/*xz*/
+#xz {
+	padding: 80px 0;
+	text-align: center;
+}
+
+#xz h2 {
+	font-weight: bold;
+	margin-bottom: 56px;
+}
+
+#xz .col-md-3{
+	margin-bottom: 20px;
+}
+
+#xz .btn {
+	background: transparent;
+	border: 1px solid #40D2B1;
+	border-radius: 0px;
+	color: #075427;
+	margin-top: 20px;
+	margin-bottom: 30px;
+    padding: 8px 40px;
+    transition: all 0.3s;
+    align: center;
+}
+
+/*
+#xz .btn:hover {
+	background: #40D2B1;
+	color: #fff;
+} */
+
+.xz-bg {
+	background: url("../images/tu4.jpg");
+	background-size: cover; 
+	width:282px;
+	height: 177px;
+	font-size: 25px;
+	padding-top: 40px;
+	text-align: center;
+	
+}
+
+.xz-wz{
+	position: relative;
+	color:#075427;
+    top: 13px;
+}
+
+/*contact*/
+#contact {
+	background: url("../images/address.png") no-repeat;
+	background-size: cover; 
+	color:#fff;
+}
+
+#contact .glyphicon{
+	padding-right: 20px;
+}
+
+#contact h2 {
+	font-weight: bold;
+	padding:20px 0;
+}
+
+#contact p {
+	line-height: 26px;
+	padding:7px 0;
+}
+
+#contact .form-control {
+	border: none;
+    border-radius: 0;
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+#contact textarea.form-control {
+	height: auto;
+}
+
+#contact input[type="submit"]{
+    background: #40D2B1;
+    color: #fff;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+/*
+#contact input[type="submit"]:hover{
+    background: rgb(44, 142, 120);
+}*/
+
+footer {
+	font-weight: 400;
+	text-align: center;
+	padding:20px 0;
+}
