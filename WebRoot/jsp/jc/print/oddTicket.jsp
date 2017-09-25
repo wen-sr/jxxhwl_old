@@ -42,7 +42,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   	<a class="easyui-linkbutton" style="margin: 10px 6%;" data-options="iconCls:'icon-print',size:'small'" onclick="doJqprint()">打印</a>
   	<div id="d">
     	<table>
-    		<tr><td style="font-size:30px;font-weight:bold;"align='center'>中小学教材<td></tr>
+    		<tr><td style="font-size:30px;font-weight:bold;"align='center'>农家书屋<td></tr>
     		<tr>
     			<td class='f' style="font-size:22px;font-weight:bold;">批次号：${ d.batchno }</td>
     		<tr/>
@@ -59,7 +59,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     			<td class='f' style="font-size:22px;font-weight:bold;">包件数：1 / 1 &nbsp;&nbsp;&nbsp;
     			<span style="font-size:25px;font-weight:bold;padding:3px;border:1px solid #000;">拼</span></td> 
     		</tr>
-    		<tr><td><h3 align="center">江西新华物流有限公司</h3></td></tr>
+    		<tr><td><h2 align="center">江西新华物流有限公司</h2></td></tr>
     	</table>
     </div>
   </body>

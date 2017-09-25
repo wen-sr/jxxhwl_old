@@ -38,6 +38,7 @@
 .d_shortname{
 	margin-top:3mm;
 	font-size:24px;
+	overflow: hidden;
 }
 .d_caseqty{
 	margin-top:3mm;

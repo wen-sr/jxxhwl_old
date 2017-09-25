@@ -51,7 +51,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 			<div class='d_shortname'>收件方：${shortname }</div>
 			<div class='d_caseqty'>包件数：${ caseqty } / ${ caseqty }</div>
 			<div class='d_note'>
-				<span style='font-size:25px;font-weight:bold;padding:1px;border:1px solid #000;margin-left: 5mm;'>农家</span>
+				<span style='font-size:25px;font-weight:bold;padding:1px;border:1px solid #000;margin-left: 5mm;'>农家书屋</span>
 			</div>
 			<div class='d_buttom'>
 				<h2>江西新华物流有限公司</h2>

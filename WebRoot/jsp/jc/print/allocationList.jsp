@@ -28,7 +28,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	<script type="text/javascript" src="${pageContext.request.contextPath}/easyui/locale/easyui-lang-zh_CN.js"></script>
 	<script language="javascript" src="${pageContext.request.contextPath}/js/jquery.jqprint.js"></script>
 	<script type="text/javascript" src="${pageContext.request.contextPath}/js/jc/allocationList.js"></script>
-	
+	<script type="text/javascript" src="${pageContext.request.contextPath}/js/mathCompute.js"></script>
+
   </head>
   	
   <body>
@@ -39,7 +40,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	 %>
 	<input type="hidden" id="batchno" value="${batchno }" />
 	<a class="easyui-linkbutton" style="margin: 0px 20%;" data-options="iconCls:'icon-print',size:'small'" onclick="doJqprint()">打印</a>
-	<div id="d">
+	<div id="d" style="width: 24.4cm">
     </div>
   </body>
 </html>

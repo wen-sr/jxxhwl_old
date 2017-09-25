@@ -10,7 +10,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   <head>
     <base href="<%=basePath%>">
     
-    <title>尾包票签</title>
+    <title>票签</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -20,16 +20,15 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/easyui/themes/default/easyui.css">
 	<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/easyui/themes/icon.css">
 	<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/base.css">
-	<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/jc/t_ticket.css">
+	<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/jc/predistribution.css">
 	<script type="text/javascript" src="${pageContext.request.contextPath}/js/jquery.min.js"></script>
 	<script type="text/javascript" src="${pageContext.request.contextPath}/easyui/jquery.easyui.min.js"></script>
 	<script type="text/javascript" src="${pageContext.request.contextPath}/js/jquery-migrate-1.4.1.min.js"></script>
 	<script type="text/javascript" src="${pageContext.request.contextPath}/easyui/locale/easyui-lang-zh_CN.js"></script>
 	<script language="javascript" src="${pageContext.request.contextPath}/js/jquery.jqprint.js"></script>
 	<STYLE type="text/css">
-		div{
-			padding:0;
-			margin:0;
+		.f{
+			font-size:25px;font-weight:bold;
 		}
 	</STYLE>
 	<script type="text/javascript">
@@ -40,24 +39,28 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   </head>
   
   <body>
-  	<a class="easyui-linkbutton" style="margin: 0 6%;" data-options="iconCls:'icon-print',size:'small'" onclick="doJqprint()">打印</a>
+  	<a class="easyui-linkbutton" style="margin: 10px 6%;" data-options="iconCls:'icon-print',size:'small'" onclick="doJqprint()">打印</a>
   	<div id="d">
-    <s:iterator value="map.list" status="st" >
-    	<div class="data">
-			<div class='d_subcode'>${issuenumber}${subcode }</div>
-			<div class='d_batchno'>批次号：${ batchno }</div>
-			<div class='d_shipno'>运输号：${ shipno }</div>
-			<div class='d_shipno_1'>${ shipno }</div>
-			<div class='d_shortname'>收件方：${shortname }</div>
-			<div class='d_caseqty'>包件数：${ caseqty } / ${ caseqty }</div>
-			<div class='d_note'>
-				<span style='font-size:25px;font-weight:bold;padding:1px;border:1px solid #000;margin-left: 5mm;'>农家</span>
-			</div>
-			<div class='d_buttom'>
-				<h2>江西新华物流有限公司</h2>
-			</div>
-		</div>
-    </s:iterator>
+    	<table>
+    		<tr><td style="font-size:30px;font-weight:bold;"align='center'>中小学教材<td></tr>
+    		<tr>
+    			<td class='f' style="font-size:22px;font-weight:bold;">批次号：${ d.batchno }</td>
+    		<tr/>
+    		<tr>	
+    			<td class='f' style="font-size:22px;font-weight:bold;">运输号：${ d.shipno }</td>
+    		<tr/>
+    		<tr>	
+    			<td style="font-family:Code39QuarterInchTT-Regular;font-size:50px">${ d.shipno }</td>
+    		<tr/>
+    		<tr>	
+    			<td class='f' style="font-size:30px;font-weight:bold;">收件方：${ d.shortname }</td>
+    		<tr/>
+    		<tr>
+    			<td class='f' style="font-size:22px;font-weight:bold;">包件数：1 / 1 &nbsp;&nbsp;&nbsp;
+    			<span style="font-size:25px;font-weight:bold;padding:3px;border:1px solid #000;">拼</span></td> 
+    		</tr>
+    		<tr><td><h3 align="center">江西新华物流有限公司</h3></td></tr>
+    	</table>
     </div>
   </body>
 </html>
