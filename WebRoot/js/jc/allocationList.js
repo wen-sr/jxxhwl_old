@@ -27,8 +27,8 @@ $(function(){
 			    		"<div class='div_fouth'>" +
 			    			"<div class='qty'>" + data['list'][i].qtyallocated  + "</div>" +
 			    			"<div class='caseqty'>" + data['list'][i].caseqty  + "</div>" +
-			    			"<div class='pack'>" + data['list'][i].pack*2  + "</div>" +
-			    			"<div class='odd'>" + data['list'][i].oddpack  + "捆零" + data['list'][i].odd  + "本</div>" +
+			    			"<div class='pack'>" + data['list'][i].pack*data["list"][i].bundle  + "</div>" +
+			    			"<div class='odd'>" + data['list'][i].oddpack  + "捆零  " + data['list'][i].odd  + "  本</div>" +
 			    		"</div>" +
 			    		
 			    		"<div class='div_fifth'>" +
@@ -51,8 +51,8 @@ $(function(){
 					    		"<div class='div_fouth'>" +
 					    			"<div class='qty'>" + data['list'][i].qtyallocated  + "</div>" +
 					    			"<div class='caseqty'>" + data['list'][i].caseqty  + "</div>" +
-					    			"<div class='pack'>" + data['list'][i].pack*2  + "</div>" +
-					    			"<div class='odd'>" + data['list'][i].oddpack  + "捆零" + data['list'][i].odd  + "本</div>" +
+					    			"<div class='pack'>" + data['list'][i].pack*data["list"][i].bundle  + "</div>" +
+					    			"<div class='odd'>" + data['list'][i].oddpack  + "捆零  " + data['list'][i].odd  + "  本</div>" +
 					    		"</div>" +
 					    		
 					    		"<div class='div_fifth'>" +

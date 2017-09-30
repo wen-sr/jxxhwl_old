@@ -40,10 +40,10 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   </head>
   
   <body>
-  	<a class="easyui-linkbutton" style="margin: 0 6%;" data-options="iconCls:'icon-print',size:'small'" onclick="doJqprint()">打印</a>
+  	<%--<a class="easyui-linkbutton" style="margin: 0 6%;" data-options="iconCls:'icon-print',size:'small'" onclick="doJqprint()">打印</a>--%>
   	<div id="d">
     <s:iterator value="map.list" status="st" >
-    	<div class="data">
+    	<div class="data" style="width:79mm; height: 89mm;">
 			<div class='d_subcode'>${issuenumber}${subcode }</div>
 			<div class='d_batchno'>批次号：${ batchno }</div>
 			<div class='d_shipno'>运输号：${ shipno }</div>

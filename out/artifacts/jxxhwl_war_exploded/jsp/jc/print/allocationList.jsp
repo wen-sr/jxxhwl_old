@@ -39,7 +39,6 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   		String dt = df.format(d);  
 	 %>
 	<input type="hidden" id="batchno" value="${batchno }" />
-	<a class="easyui-linkbutton" style="margin: 0px 20%;" data-options="iconCls:'icon-print',size:'small'" onclick="doJqprint()">打印</a>
 	<div id="d" style="width: 24.4cm">
     </div>
   </body>

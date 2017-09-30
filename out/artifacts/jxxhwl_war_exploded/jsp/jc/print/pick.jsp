@@ -42,12 +42,12 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   
   <body>
   	<input type="hidden" id="pick" name='pick' value="${pickno }" />
-  	<div id="d">
+  	<div id="d" style="width:770px; margin-left: 40px;" align="left">
   	<h2 align="center">江西新华物流有限公司</h2>
   	<h3 align="center">拣货清单</h3>
   	</div>
   	<br/>
-  	<div align="center" style="margin-top:50px;">
+  	<div align="center" style="margin-top:50px;float: left;">
 		<a class="easyui-linkbutton" data-options="iconCls:'icon-print',size:'small'" onclick="doJqprint();">打印</a>
 	</div>
   </body>

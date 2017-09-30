@@ -1,22 +1,26 @@
 * {
 	font-family: "����";
-	font-size:14px;
+	font-size:16px;
 }
 
 .div_left {
 	position:relative;
-	width: 11.2cm;
-	height: 7cm;
+	width: 12.2cm;
+	height: 6.97cm;
 	float: left;
-	padding-left:10mm;
+	/*padding-left:1mm;*/
+	overflow: hidden;
+	/*background: red;*/
 }
 
 .div_right {
 	position:relative;
-	width: 11.2cm;
-	height: 7cm;
+	width: 12.2cm;
+	height: 6.97cm;
 	float: right;
-	padding-right:10mm;
+	/*padding-right:10mm;*/
+	overflow: hidden;
+	/*background: blue;*/
 }
 
 .div_left .shortname {
@@ -34,6 +38,9 @@
 .div_left .descr {
 	float: left;
 	padding-left: 2cm;
+    width: 45%;
+    height: 0.5cm;
+    overflow: hidden;
 }
 
 .div_left .publisher {
@@ -54,7 +61,7 @@
 
 .div_left .amt {
 	float: left;
-	padding-left: 1cm;
+	padding-left: 2cm;
 }
 
 .div_left .subcode {
@@ -75,12 +82,12 @@
 
 .div_left .caseqty {
 	float: left;
-	padding-left: 1.5cm;
+	padding-left: 2cm;
 }
 
 .div_left .pack {
 	float: left;
-	padding-left: 1cm;
+	padding-left: 1.7cm;
 }
 
 .div_left .odd {
@@ -118,12 +125,15 @@
 
 .div_right .descr {
 	float: left;
-	padding-left: 2cm;
+	padding-left: 1.5cm;
+    width: 45%;
+    height: 0.5cm;
+    overflow: hidden;
 }
 
 .div_right .publisher {
 	float: right;
-	padding-right: 0;
+	padding-right: 0.3cm;
 }
 
 .div_right .div_third {
@@ -134,17 +144,17 @@
 
 .div_right .price {
 	float: left;
-	padding-left: 2.2cm;
+	padding-left: 1.5cm;
 }
 
 .div_right .amt {
 	float: left;
-	padding-left: 1cm;
+	padding-left: 2cm;
 }
 
 .div_right .subcode {
 	float: right;
-	padding-right: 0;
+	padding-right: 0.5cm;
 }
 
 .div_right .div_fouth {
@@ -155,7 +165,7 @@
 
 .div_right .qty {
 	float: left;
-	padding-left: 2.2cm;
+	padding-left: 1.5cm;
 }
 
 .div_right .caseqty {
@@ -165,12 +175,12 @@
 
 .div_right .pack {
 	float: left;
-	padding-left: 1cm;
+	padding-left: 1.5cm;
 }
 
 .div_right .odd {
 	float: right;
-	padding-right: 1cm;
+	padding-right: 1.5cm;
 }
 
 .div_right .div_fifth {
@@ -181,7 +191,7 @@
 
 .div_right .shipno {
 	float: left;
-	padding-left: 2.2cm;
+	padding-left: 1.5cm;
 }
 
 .div_right .barcode {

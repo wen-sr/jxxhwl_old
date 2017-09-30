@@ -55,12 +55,12 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   
   <body>
   	<input type="hidden" id="batchno" value="${batchno }" />
-    <div align="center" id='d'>
-    	<div align="center">
-    		<h1>江西新华物流有限公司</h1>
-    		<h1>零件储运发货清单</h1>
-    	</div>
+    <div align="left" id='d' style="font-size:20px;width:770px;margin-left:40px;">
     	<div align="center" >
+    		<h3>江西新华物流有限公司</h3>
+    		<h3>零件储运发货清单</h3>
+    	</div>
+    	<div align="left" >
     		<table width='90%' style="border:0px;" frame=hsides rules='rows'>
     			<tr>
     				<td colspan="5">调度批号：${batchno }</td><td>列印时间：<%= dt %></td>
@@ -72,7 +72,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     			</tr>
     		</table>
     	</div>
-    	<div align="center" style="padding:50px 0px" >
+    	<div align="left" style="padding:50px 0px" >
     		<table id="t2" width="90%" cellspacing=0 frame=hsides rules='rows'>
     			<tr><td class="td1" width='10%'>客户代码</td><td class="td1" width='10%'>客户名称</td><td class="td1" width='10%'>运号</td><td  class="td1" width='10%'>数量</td><td class="td1" width='10%'>捆扎</td><td  class="td1" width='10%'>包件</td></tr>
     		</table>

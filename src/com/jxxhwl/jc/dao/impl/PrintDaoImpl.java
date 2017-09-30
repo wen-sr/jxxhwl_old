@@ -125,7 +125,7 @@ public class PrintDaoImpl extends BaseDao implements PrintDao {
 	 */
 	@Override
 	public List<Distribution> getAllocationList(String batchno) {
-		String sql = "select a.issuenumber,a.subcode,a.code,a.shortname,b.descr,b.publisher,(select shortname from JiaoCaiStorer d where b.publisher=d.storerkey ) publisher_shortname,b.price,SUM(qtyallocated) qtyallocated,(case when oddpack=1 then caseqty+1 when oddpack=0 then caseqty end) caseqty,a.pack,a.oddpack,a.odd,a.shipno,b.barcode from JiaoCaiCompute a,JiaoCaiSku b where a.issuenumber=b.issuenumber and a.subcode = b.subcode and a.batchno = ? group by a.issuenumber,a.subcode,a.code,a.shortname,b.descr,b.publisher,b.price,caseqty,oddpack,odd,b.barcode,a.pack,a.shipno";
+		String sql = "select a.issuenumber,a.subcode,a.code,a.shortname,b.descr,b.publisher,(select shortname from JiaoCaiStorer d where b.publisher=d.storerkey ) publisher_shortname,b.price,SUM(qtyallocated) qtyallocated,(case when oddpack=1 then caseqty+1 when oddpack=0 then caseqty end) caseqty,a.pack,a.oddpack,a.odd,a.shipno,b.barcode,b.bundle from JiaoCaiCompute a,JiaoCaiSku b where a.issuenumber=b.issuenumber and a.subcode = b.subcode and a.batchno = ? group by a.issuenumber,a.subcode,a.code,a.shortname,b.descr,b.publisher,b.price,caseqty,oddpack,odd,b.barcode,a.pack,a.shipno,b.bundle";
 		List<Distribution> list = null;
 		list = getJdbcTemplate().query(sql, new Object[]{batchno}, new RowMapper() {
 			
@@ -147,6 +147,7 @@ public class PrintDaoImpl extends BaseDao implements PrintDao {
 				d.setBarcode(rs.getString("barcode"));
 				d.setSubcode(rs.getString("subcode"));
 				d.setIssuenumber(rs.getString("issuenumber"));
+				d.setBundle(rs.getInt("bundle"));
 				return d;
 			}
 		});

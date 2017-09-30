@@ -55,14 +55,14 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   
   <body>
   	<input type="hidden" id="batchno" value="${batchno }" />
-  	<div id="d" align="center" style="font-size:20px;">
-	    <div align="center">
+  	<div id="d" align="left" style="font-size:20px;width:770px;margin-left:40px;">
+	    <div align="left">
 	    	<div align="center">
 	    		<h3>江西新华物流有限公司</h3>
 	    		<h3>整件储运发货清单</h3>
 	    	</div>
-	    	<div align="center" >
-	    		<table width='770px' style="border:0px;"  >
+	    	<div align="left" >
+	    		<table width='770px' style="border:0px;left:0"  >
 	    			<tr>
 	    				<td colspan="5">调度批号：${ batchno }</td><td>列印时间：<%= dt %></td>
 	    			</tr>
@@ -74,13 +74,13 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	    			</tr>
 	    		</table>
 	    	</div>
-	    	<div align="center" style="padding:50px 0px;" >
+	    	<div align="left" style="padding:50px 0px;left:0" >
 	    		<table id="t2" width="770px" cellspacing=0 frame=hsides rules='rows'>
 	    			<tr><td class='td1' width='10%'>客户代码</td><td class='td1' width='10%'>客户名称</td><td class='td1' width='10%'>运号</td><td class='td1' width='10%'>数量</td><td class='td1' width='10%'>捆扎</td><td  class='td1' width='10%'>包件</td></tr>
 	    		</table>
 	    	</div>
     	</div>
     </div>
-   <a class="easyui-linkbutton" style="margin: 10px 47%;" data-options="iconCls:'icon-print',size:'small'" onclick="doJqprint()">打印</a>
+   <a class="easyui-linkbutton" style="margin: 10px 47%;"  data-options="iconCls:'icon-print',size:'small'" onclick="doJqprint()">打印</a>
   </body>
 </html>
