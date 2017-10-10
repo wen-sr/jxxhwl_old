@@ -74,7 +74,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     	</div>
     	<div align="left" style="padding:50px 0px" >
     		<table id="t2" width="90%" cellspacing=0 frame=hsides rules='rows'>
-    			<tr><td class="td1" width='10%'>客户代码</td><td class="td1" width='10%'>客户名称</td><td class="td1" width='10%'>运号</td><td  class="td1" width='10%'>数量</td><td class="td1" width='10%'>捆扎</td><td  class="td1" width='10%'>包件</td></tr>
+    			<tr><td class="td1" width='10%'>客户代码</td><td class="td1" width='10%'>客户名称</td><td class="td1" width='10%'>运号</td><td  class="td1" width='10%'>数量</td><td class="td1" width='10%'>&nbsp;</td><td  class="td1" width='10%'>包件</td></tr>
     		</table>
     	</div>
     </div>

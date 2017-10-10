@@ -212,7 +212,8 @@ public class PrintDaoImpl extends BaseDao implements PrintDao {
 	 */
 	@Override
 	public List<Distribution> getOddCaseListHead(String batchno) {
-		String sql = "select issuenumber,code,shortname,batchno,shipno,(select phone from JiaoCaiStorer where JiaoCaiCompute.code = JiaoCaiStorer.storerkey) phone,(select contact from JiaoCaiStorer where JiaoCaiCompute.code = JiaoCaiStorer.storerkey) contact,(select address1 from JiaoCaiStorer where JiaoCaiCompute.code = JiaoCaiStorer.storerkey) address1,SUM(qtyallocated) qtyallocated,pack from JiaoCaiCompute where caseqty = 0 and oddpack = 0 and batchno = ? group by issuenumber,code,shortname,batchno,shipno,pack";
+		//String sql = "select issuenumber,code,shortname,batchno,shipno,(select phone from JiaoCaiStorer where JiaoCaiCompute.code = JiaoCaiStorer.storerkey) phone,(select contact from JiaoCaiStorer where JiaoCaiCompute.code = JiaoCaiStorer.storerkey) contact,(select address1 from JiaoCaiStorer where JiaoCaiCompute.code = JiaoCaiStorer.storerkey) address1,SUM(qtyallocated) qtyallocated,pack from JiaoCaiCompute where caseqty = 0 and oddpack = 0 and batchno = ? group by issuenumber,code,shortname,batchno,shipno,pack";
+		String sql = "select issuenumber,code,shortname,batchno,shipno,(select phone from JiaoCaiStorer where JiaoCaiCompute.code = JiaoCaiStorer.storerkey) phone,(select contact from JiaoCaiStorer where JiaoCaiCompute.code = JiaoCaiStorer.storerkey) contact,(select address1 from JiaoCaiStorer where JiaoCaiCompute.code = JiaoCaiStorer.storerkey) address1,SUM(qtyallocated) qtyallocated from JiaoCaiCompute where caseqty = 0 and oddpack = 0 and batchno = ? group by issuenumber,code,shortname,batchno,shipno";
 		List<Distribution> list = null;
 		list = getJdbcTemplate().query(sql, new Object[]{batchno}, new RowMapper<Distribution>() {
 			
@@ -224,7 +225,7 @@ public class PrintDaoImpl extends BaseDao implements PrintDao {
 				d.setBatchno(rs.getString("batchno"));
 				d.setShipno(rs.getString("shipno"));
 				d.setQtyallocated(rs.getInt("qtyallocated"));
-				d.setPack(rs.getInt("pack"));
+				//d.setPack(rs.getInt("pack"));
 				d.setIssuenumber(rs.getString("issuenumber"));
 				d.setPhone(rs.getString("phone")==null?"":rs.getString("phone"));
 				d.setContact(rs.getString("contact")==null?"":rs.getString("contact"));

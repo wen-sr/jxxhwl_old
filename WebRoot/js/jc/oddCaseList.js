@@ -22,7 +22,7 @@ $(function(){
 			
 			var html_head = "";
 			for(var i in data["dt"]){
-				html_head += "<tr><td>"+ data["dt"][i].code +"</td><td>"+ data["dt"][i].shortname +"</td><td>"+ data["dt"][i].shipno +"</td><td>"+ data["dt"][i].qtyallocated +"</td><td>"+ data["dt"][i].pack +"</td><td>" + 1 + "</td></tr>";
+				html_head += "<tr><td>"+ data["dt"][i].code +"</td><td>"+ data["dt"][i].shortname +"</td><td>"+ data["dt"][i].shipno +"</td><td>"+ data["dt"][i].qtyallocated +"</td><td>&nbsp;</td><td>" + 1 + "</td></tr>";
 				html_head += "<tr><td class='td2'>&nbsp;</td><td class='td2'>"+ data["dt"][i].contact +"</td><td class='td2'>"+ data["dt"][i].phone +"</td><td colspan='3' class='td2'>"+ data["dt"][i].address +"</td></tr>"
 			}
 			$("#t2").append(html_head);

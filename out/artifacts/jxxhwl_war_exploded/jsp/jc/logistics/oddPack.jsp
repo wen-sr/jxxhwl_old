@@ -52,8 +52,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 					选择客户：
 				</td>
 				<td>
-					<input type="text" id="code" class="easyui-combobox"
-						data-options="url:'jc/oddPack_loadCustomer.action',method:'get',valueField:'storerkey',textField:'shortname',panelHeight:120" />
+					<select id="code" class="easyui-combobox" style="width: 155px"
+						data-options="url:'jc/oddPack_loadCustomer.action',method:'get',valueField:'storerkey',textField:'storerkey',panelHeight:120" />
 				</td>
 				<td><a class="easyui-linkbutton" id='beginPack' onclick="beginPack()">&nbsp;开始打包&nbsp;</a></td>
 			</tr>

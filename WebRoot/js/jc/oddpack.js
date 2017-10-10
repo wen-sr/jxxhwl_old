@@ -25,7 +25,7 @@ function addUnpackData(issuenumber,code){
 		border:true,
 		singleSelect:false,
 		pagination:true,
-        pageSize:20,
+        pageSize:10,
         pageList:[10,15,20,100000000],
 		showFooter: true,
 		toolbar:'#tb',
@@ -89,7 +89,7 @@ function addUnpackData(issuenumber,code){
 		}]]
 	});
     //0 : 表示需发界面   1 ： 表示已发界面
-    $("#currentType").val("0");
+    // $("#currentType").val("0");
 
 }
 /**
@@ -106,7 +106,7 @@ function addPackedData(issuenumber,code) {
 		border:true,
 		singleSelect:false,
 		pagination:true,
-        pageSize:20,
+        pageSize:10,
         pageList:[10,15,20,100000000],
 		showFooter: true,
 		toolbar:'#tb',
@@ -170,7 +170,7 @@ function addPackedData(issuenumber,code) {
 		}]]
 	});
     //0 : 表示需发界面   1 ： 表示已发界面
-    $("#currentType").val("0");
+    // $("#currentType").val("0");
 }
 /**
  * 根据条码得到信息
@@ -200,6 +200,9 @@ function loadInfoByBarcode(){
 					$("#descr").textbox('setValue', p.descr);
 					$("#pack_id").textbox('setValue', p.id);
 					$("#publisher").combobox('setValue', p.publisher);
+
+                    $('#qty').next('span').find('input').focus();
+
 				}else{
 					$("#price").textbox('setValue', '');
 					$("#qty").textbox('setValue', '');
@@ -233,7 +236,7 @@ function packConfirm(){
 			data:'id=' + id + '&packwho=' + packwho,
 			dataType:'json',
 			success:function(data){
-				$.messager.alert("操作提示",data,"info");
+				// $.messager.alert("操作提示",data,"info");
 				beginPack();
 				$("#subcode").textbox('setValue', '');
 				$("#price").textbox('setValue', '');
@@ -241,6 +244,8 @@ function packConfirm(){
 				$("#descr").textbox('setValue', '');
 				$("#pid").textbox('setValue', '');
 				$("#publisher").combobox('setValue', '');
+
+                $('#subcode').next('span').find('input').focus();
 			},
 			error:function(){
 				$.messager.alert("操作提示","数据错误，联系管理员！","error");
@@ -377,7 +382,13 @@ $(function(){
 	});
 	$('#subcode').textbox('textbox').keydown(function (e) {
         if (e.keyCode == 13) {
-        	loadInfoByBarcode();
+            loadInfoByBarcode();
+        }
+    });
+
+    $('#qty').textbox('textbox').keydown(function (e) {
+        if (e.keyCode == 13) {
+            packConfirm();
         }
     });
 
