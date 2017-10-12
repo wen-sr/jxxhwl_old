@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.1//EN"
+	"http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="wx" extends="json-default" namespace="/wx">
+		<action name="subscribe">
+			<result>/jsp/wx/subscribe/subscribe.jsp</result>
+		</action>
+		<action name="access" class="wXAction" method="wxAccess">
+		</action>
+		<action name="shoufa">
+			<result name="success">/jsp/wx/shoufa/shoufa.jsp</result>
+		</action>
+		<action name="get_*" class="getShouFaAction" method="{1}">
+			<result name="shou">/jsp/wx/shoufa/shoushow.jsp</result>
+			<result name="fa">/jsp/wx/shoufa/fashow.jsp</result>
+			<result name="storer" type="json">
+				<param name="root">list</param>
+			</result>
+		</action>
+		<action name="advice">
+			<result name="success">/jsp/wx/advice/advices.jsp</result>
+		</action>
+		<action name="member_*" class="memberAction" method="{1}">
+			<result name="loginSuccess">/jsp/wx/member/login.jsp</result>
+			<result name="loginFailure">/jsp/wx/member/loginfailure.jsp</result>
+		</action>
+		<action name="userInfo_*" class="wXUserInfoAction" method="{1}">
+			<result name="ok" type="json">
+				<param name="root">ok</param>
+			</result>
+			<result name="success" type="json">
+				<param name="root">result</param>
+			</result>
+		</action>
+		<action name="wXDispatcher_executePerDay" class="wXDispatcher" method="executePerDay">
+			<result name="success" type="json">
+				<param name="root">log</param>
+			</result>
+		</action>
+		<action name="sendInform">
+			<result name="success">/jsp/wx/function/sendInform.jsp</result>
+		</action>
+		<action name="wXFunction_*" class="wXFunctionAction" method="{1}">
+			<result name="ok" type="json">
+				<param name="root">ok</param>
+			</result>
+			<result name="success" type="json">
+				<param name="root">result</param>
+			</result>
+		</action>
+	</package>
+</struts>

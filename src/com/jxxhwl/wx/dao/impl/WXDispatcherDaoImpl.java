@@ -94,7 +94,7 @@ public class WXDispatcherDaoImpl extends JDBCBaseDao implements WXDispatcherDao{
 	public List<ChanLiang> getOther() {
 		DatabaseContextHolder.clearDBType();
 		DatabaseContextHolder.setDBType(DatabaseContextHolder.DATA_SOURCE_3);
-		String sql = "select * from JiaoCaiChanLiang where dd = CONVERT(varchar(100), GETDATE(), 23)";
+		String sql = "select * from OTHER_YIELD where dd = CONVERT(varchar(100), GETDATE(), 23)";
 		return this.getJdbcTemplate().query(sql, new RowMapper() {
 
 			@Override
