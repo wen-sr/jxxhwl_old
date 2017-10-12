@@ -87,5 +87,27 @@ public class WXDispatcherDaoImpl extends JDBCBaseDao implements WXDispatcherDao{
 			}
 		});
 	}
-	
+	/**
+	 * 教材
+	 */
+	@Override
+	public List<ChanLiang> getOther() {
+		DatabaseContextHolder.clearDBType();
+		DatabaseContextHolder.setDBType(DatabaseContextHolder.DATA_SOURCE_3);
+		String sql = "select * from JiaoCaiChanLiang where dd = CONVERT(varchar(100), GETDATE(), 23)";
+		return this.getJdbcTemplate().query(sql, new RowMapper() {
+
+			@Override
+			public ChanLiang mapRow(ResultSet rs, int arg1) throws SQLException {
+				ChanLiang c = new ChanLiang();
+				c.setIssue(rs.getString("issue"));
+				c.setReceiptToday(rs.getInt("receipt_today"));
+				c.setReceiptSum(rs.getInt("receipt_sum"));
+				c.setDeliverToday(rs.getInt("deliver_today"));
+				c.setDeliverSum(rs.getInt("deliver_sum"));
+				return c;
+			}
+		});
+	}
+
 }

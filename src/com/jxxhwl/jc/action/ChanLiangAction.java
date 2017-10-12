@@ -45,11 +45,27 @@ public class ChanLiangAction extends BaseAction implements ModelDriven<com.jxxhw
 		return OK;
 	}
 	/**
+	 * 保存
+	 * @return
+	 */
+	public String addOther(){
+		ok = chanLiangService.addOther(chanLiang);
+		return OK;
+	}
+	/**
 	 * 修改
 	 * @return
 	 */
 	public String edit(){
 		ok = chanLiangService.edit(chanLiang);
+		return OK;
+	}
+	/**
+	 * 修改
+	 * @return
+	 */
+	public String editOther(){
+		ok = chanLiangService.editOther(chanLiang);
 		return OK;
 	}
 	/**
@@ -59,6 +75,30 @@ public class ChanLiangAction extends BaseAction implements ModelDriven<com.jxxhw
 	public String getLouxia(){
 		int i = chanLiangService.getLouxia(chanLiang.getIssue());
 		ActionContext.getContext().getValueStack().set("result", i);
+		return SUCCESS;
+	}
+	/**
+	 * 获取汇总
+	 * @return
+	 */
+	public String getOtherSum(){
+		chanLiang = chanLiangService.getOtherSum(chanLiang.getIssue());
+		ActionContext.getContext().getValueStack().set("result", chanLiang);
+		return SUCCESS;
+	}
+
+
+	/**
+	 * 加载其他类型已登记信息
+	 * @return
+	 */
+	public String loadOtherData(){
+		//当前页
+		int currentPage = Integer.parseInt((page == null || page == "0") ? "1":page);
+		//每页显示条数
+		int pageSize = Integer.parseInt((rows == null || rows == "0") ? "20":rows);
+		Map<String, Object> map = chanLiangService.loadOtherData(currentPage,pageSize,chanLiang.getDd());
+		ActionContext.getContext().getValueStack().set("result", map);
 		return SUCCESS;
 	}
 }

@@ -31,4 +31,12 @@ public interface ChanLiangService {
 	 * @return
 	 */
 	int getLouxia(String issue);
+
+    Map<String,Object> loadOtherData(int currentPage, int pageSize, String dd);
+
+	String addOther(ChanLiang chanLiang);
+
+	String editOther(ChanLiang chanLiang);
+
+	ChanLiang getOtherSum(String issue);
 }

@@ -11,4 +11,6 @@ public interface WXDispatcherDao {
 	public int getChuHuo();
 
 	public List<ChanLiang> getJiaoCai();
+
+    List<ChanLiang> getOther();
 }

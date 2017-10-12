@@ -11,4 +11,6 @@ public interface WXDispatcherService {
 	public String getChuHuo();
 	
 	public List<ChanLiang> getJiaoCai();
+
+    List<ChanLiang> getOther();
 }

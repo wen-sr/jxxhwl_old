@@ -99,7 +99,7 @@ public class IssuenumberDaoImpl extends BaseDao implements IssuenumberDao {
 	 */
 	@Override
 	public List<Issuenumber> getIssue() {
-		String sql = "select distinct SUBSTRING(note,1,3) from JiaoCaiIssuenumber";
+		String sql = "select distinct note from JiaoCaiIssuenumber";
 		List<Issuenumber> list = this.getJdbcTemplate().query(sql, new RowMapper() {
 
 			@Override

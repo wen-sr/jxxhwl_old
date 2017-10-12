@@ -56,9 +56,11 @@ public class WXDispatcher{
 		String chuhuo = wXDispatcherService.getChuHuo();
 		//教材
 		List<ChanLiang> jiaocai = wXDispatcherService.getJiaoCai();
+		//其他
+		List<ChanLiang> other = wXDispatcherService.getOther();
 		
 		String content = "";
-		if( (shouhuo != null && !"0".equals(shouhuo)) || (chuhuo != null && !"0".equals(chuhuo)) || (jiaocai != null && jiaocai.size() > 0)  ){
+		if( (shouhuo != null && !"0".equals(shouhuo)) || (chuhuo != null && !"0".equals(chuhuo)) || (jiaocai != null && jiaocai.size() > 0) || (other != null && other.size() > 0)  ){
 			content = "新华物流今日工作产量：";
 			if((shouhuo != null && !"0".equals(shouhuo))){
 				content += "4号库总收货：" + shouhuo + "件";
@@ -78,6 +80,11 @@ public class WXDispatcher{
 				}
 				for(ChanLiang c : jiaocai ){
 					content += c.getIssue() + ":" + "至今总出票:" + c.getHeJi() + "件，其中代发" + c.getDaiFa() +"件;"; 
+				}
+			}
+			if(other != null && other.size() > 0){
+				for(ChanLiang c : other){
+					content += c.getIssue() + ":" + "今日收货:" + c.getReceiptToday() + "件,共计收货:" + c.getReceiptSum() +"件,今日发货:"+ c.getDeliverToday() + "件,共计发货:" + c.getDeliverSum() + "件;";
 				}
 			}
 		}

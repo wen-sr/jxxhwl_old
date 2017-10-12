@@ -37,4 +37,12 @@ public interface ChanLiangDao {
 	 * @return
 	 */
 	int getLouxia(String issue);
+
+    List<ChanLiang> loadOtherData(int currentPage, int pageSize, String dd);
+
+	int addOther(ChanLiang cl);
+
+	int editOther(ChanLiang cl);
+
+	ChanLiang getOtherSum(String issue);
 }

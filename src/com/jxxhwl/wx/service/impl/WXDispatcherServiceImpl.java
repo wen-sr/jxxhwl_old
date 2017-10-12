@@ -111,4 +111,9 @@ public class WXDispatcherServiceImpl implements WXDispatcherService{
 		List<ChanLiang> list = wXDispatcherDao.getJiaoCai();
 		return list;
 	}
+	@Override
+	public List<ChanLiang> getOther() {
+		List<ChanLiang> list = wXDispatcherDao.getOther();
+		return list;
+	}
 }

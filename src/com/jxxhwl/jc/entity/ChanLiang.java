@@ -19,6 +19,43 @@ public class ChanLiang {
 	private String addwho;
 	private String note;
 	private String issue;
+	private int receiptToday;
+	private int receiptSum;
+	private int deliverToday;
+	private int deliverSum;
+
+	public int getReceiptToday() {
+		return receiptToday;
+	}
+
+	public void setReceiptToday(int receiptToday) {
+		this.receiptToday = receiptToday;
+	}
+
+	public int getReceiptSum() {
+		return receiptSum;
+	}
+
+	public void setReceiptSum(int receiptSum) {
+		this.receiptSum = receiptSum;
+	}
+
+	public int getDeliverToday() {
+		return deliverToday;
+	}
+
+	public void setDeliverToday(int deliverToday) {
+		this.deliverToday = deliverToday;
+	}
+
+	public int getDeliverSum() {
+		return deliverSum;
+	}
+
+	public void setDeliverSum(int deliverSum) {
+		this.deliverSum = deliverSum;
+	}
+
 	public String getIssue() {
 		return issue;
 	}

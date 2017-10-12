@@ -235,6 +235,9 @@
 		<action name="cldengji">
 			<result>/jsp/jc/cl/chdj.jsp</result>
 		</action>
+		<action name="otherCldengji">
+			<result>/jsp/jc/cl/other.jsp</result>
+		</action>
 		<action name="chanLiang_*" class="chanLiangAction" method="{1}">
 			<result name="ok" type="json">
 				<param name="root">ok</param>

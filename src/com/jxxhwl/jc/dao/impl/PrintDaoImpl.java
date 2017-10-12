@@ -268,7 +268,7 @@ public class PrintDaoImpl extends BaseDao implements PrintDao {
 	 */
 	@Override
 	public List<Distribution> getPickListDetail(String pickno) {
-		String sql = "select a.code,a.shortname,a.qtyallocated,a.pack,a.pickno from JiaoCaiCompute a,JiaoCaiSku b where a.issuenumber=b.issuenumber and a.subcode=b.subcode and a.pickno=? ";
+		String sql = "select a.code,a.shortname,a.qtyallocated,a.pack,a.pickno from JiaoCaiCompute a,JiaoCaiSku b,JiaoCaiStorer c where a.issuenumber=b.issuenumber and a.subcode=b.subcode and a.code = c.storerkey and a.pickno=? order by orderBy";
 		List<Distribution> list = null;
 		try {
 			list = getJdbcTemplate().query(sql, new Object[]{pickno}, new RowMapper() {
