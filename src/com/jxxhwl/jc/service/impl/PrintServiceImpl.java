@@ -107,10 +107,16 @@ public class PrintServiceImpl implements PrintService {
 	public Map<String, Object> pickList(String pickno) {
 		List<Distribution> head = printDao.getPickListHead(pickno);
 		List<Distribution> detail = printDao.getPickListDetail(pickno);
+
+		//储位小计
+		//List<Distribution> xiaoji = printDao.getPickXiaoJi(pickno);
+
 		Map<String, Object> map = new HashMap<String, Object>();
+		//if(head != null && head.size() > 0 && xiaoji.size() > 0 ){
 		if(head != null && head.size() > 0 ){
 			map.put("dt", head.get(0));
 			map.put("mx", detail);
+			//map.put("xj", xiaoji);
 			return map;
 		}
 		return null;

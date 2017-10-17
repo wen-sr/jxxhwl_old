@@ -268,7 +268,7 @@ public class PrintDaoImpl extends BaseDao implements PrintDao {
 	 */
 	@Override
 	public List<Distribution> getPickListDetail(String pickno) {
-		String sql = "select a.code,a.shortname,a.qtyallocated,a.pack,a.pickno from JiaoCaiCompute a,JiaoCaiSku b,JiaoCaiStorer c where a.issuenumber=b.issuenumber and a.subcode=b.subcode and a.code = c.storerkey and a.pickno=? order by orderBy";
+		String sql = "select a.code,a.shortname,a.qtyallocated,a.pack,a.pickno,c.loc,c.sortBy from JiaoCaiCompute a,JiaoCaiSku b,JiaoCaiStorer c where a.issuenumber=b.issuenumber and a.subcode=b.subcode and a.code = c.storerkey and a.pickno=? order by sortBy";
 		List<Distribution> list = null;
 		try {
 			list = getJdbcTemplate().query(sql, new Object[]{pickno}, new RowMapper() {
@@ -281,6 +281,8 @@ public class PrintDaoImpl extends BaseDao implements PrintDao {
 					d.setQtyallocated(rs.getInt("qtyallocated"));
 					d.setPack(rs.getInt("pack"));
 					d.setPickno(rs.getString("pickno"));
+					d.setLoc(rs.getString("loc"));
+					d.setSortBy(rs.getInt("sortBy"));
 					return d;
 				}
 			});
@@ -314,4 +316,26 @@ public class PrintDaoImpl extends BaseDao implements PrintDao {
 			return null;
 		}
 	}
+
+	@Override
+	public List<Distribution> getPickXiaoJi(String pickno) {
+		String sql = "select pickno,a.pack,SUBSTRING(c.loc,1,2) loc,sum(qtyallocated) qtyallocated from JiaoCaiCompute a,JiaoCaiSku b,JiaoCaiStorer c where a.issuenumber=b.issuenumber and a.subcode=b.subcode and a.code = c.storerkey and a.pickno=? group by pickno,a.pack,SUBSTRING(c.loc,1,2) order by 1 ";
+
+		List<Distribution> list = getJdbcTemplate().query(sql,new Object[]{ pickno}, new RowMapper<Distribution>() {
+
+			@Override
+			public Distribution mapRow(ResultSet rs, int arg1) throws SQLException {
+				Distribution d = new Distribution();
+				d.setPickno(rs.getString("pickno"));
+				d.setPack(rs.getInt("pack"));
+				d.setLoc(rs.getString("loc") + "小计");
+				d.setQtyallocated(rs.getInt("qtyallocated"));
+				return d;
+			}
+		});
+
+		return list;
+	}
+
+
 }

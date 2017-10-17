@@ -115,10 +115,13 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	<div id="tb1" style="text-align: center">
 		<a class="easyui-linkbutton" iconCls="icon-edit" onclick="addPack()">确定</a>
 	</div>
+	<div id="tb10" style="text-align: center">
+		<a class="easyui-linkbutton" iconCls="icon-edit" onclick="addSku()">确定</a>
+	</div>
 	<!-- 一号多书时选择打包信息 -->
-	<div id="showSubcode" class="easyui-window" title="选择征订代码" data-options="modal:true,closed:true,iconCls:'icon-save'"
+	<div id="showSubcode" class="easyui-window" title="选择征订代码" data-options="modal:true,closed:true,iconCls:'icon-save',toolbar:'#tb10'"
 			style="width: 800px; height: 350px; padding: 10px;">
-		<table id="c_subcode" >
+		<table  class="easyui-datagrid" id="c_subcode"  >
 		</table>
 	</div>
   </body>

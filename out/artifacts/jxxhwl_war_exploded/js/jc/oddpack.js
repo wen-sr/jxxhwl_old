@@ -193,7 +193,55 @@ function loadInfoByBarcode(){
 		dataType:'json',
 		success:function(data){
 			if(data){
-				var p = data[0];
+
+				if(data.length == 1 ){
+                    var p = data[0];
+                }else{
+                    $("#c_subcode").datagrid({
+                        url: 'jc/oddPack_findByBarcode.action?issuenumber=' + issuenumber + '&code=' + code + '&barcode=' + subcode,
+                        height: 'auto',
+                        fitColumns: true,
+                        striped: true,
+                        rownumbers: true,
+                        border: true,
+                        singleSelect: true,
+                        pagination: false,
+                        showFooter: true,
+                        toolbar: '#tb10',
+                        columns: [[{
+                            field:"id",
+                            title:"编号",
+                            checkbox:true,
+                            width:50
+                        },{
+                            field:"publisher",
+                            title:"出版社",
+                            width:50
+                        },{
+                            field:"barcode",
+                            title:"条码",
+                            width:50
+                        },{
+                            field:"subcode",
+                            title:"征订代码",
+                            width:80
+                        },{
+                            field:"descr",
+                            title:"书名",
+                            width:90
+                        },{
+                            field:"price",
+                            title:"定价",
+                            width:30
+                        },{
+                            field:"qtyallocated",
+                            title:"册数",
+                            width:30
+                        }]]
+                    });
+
+                    $("#showSubcode").window("open");
+				}
 				if(p){
 					$("#price").textbox('setValue', p.price);
 					$("#qty").textbox('setValue', p.qtyallocated);
@@ -218,6 +266,25 @@ function loadInfoByBarcode(){
 		}
 	});
 }
+
+
+
+function addSku(){
+    var row = $('#c_subcode').datagrid('getSelected');
+    if(!row ) {
+        $.messager.alert("操作提示","没有选中记录","error");
+        return;
+    }
+    var p = row;
+    $("#price").textbox('setValue', p.price);
+    $("#qty").textbox('setValue', p.qtyallocated);
+    $("#descr").textbox('setValue', p.descr);
+    $("#pack_id").textbox('setValue', p.id);
+    $("#publisher").combobox('setValue', p.publisher);
+    $("#showSubcode").window("close");
+}
+
+
 /**
  * 打包确认
  */
@@ -283,6 +350,8 @@ function removePack(){
 		}
 	});
 }
+
+
 /**
  * 选择表格数据确认打包
  */

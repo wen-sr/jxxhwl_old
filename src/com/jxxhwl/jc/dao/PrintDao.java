@@ -70,4 +70,10 @@ public interface PrintDao {
 	 */
 	public Distribution getReturnTicket(String subcode);
 
+	/**
+	 * 拣货小计
+	 * @param pickno
+	 * @return
+	 */
+	List<Distribution> getPickXiaoJi(String pickno);
 }

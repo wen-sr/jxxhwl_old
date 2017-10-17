@@ -27,6 +27,23 @@ public class Distribution {
 	private Double amt;
 	private int qtyfree;
 	private String packwho;
+
+	public String getLoc() {
+		return loc;
+	}
+
+	public void setLoc(String loc) {
+		this.loc = loc;
+	}
+
+	public int getSortBy() {
+		return sortBy;
+	}
+
+	public void setSortBy(int sortBy) {
+		this.sortBy = sortBy;
+	}
+
 	private String packdate;
 	private String editwho;
 	private String editdate;
@@ -37,6 +54,8 @@ public class Distribution {
 	private String address;
 	private String contact;
 	private int qtyshipped;
+	private String loc;
+	private int sortBy;
 
 	public int getQtyshipped() {
 		return qtyshipped;
