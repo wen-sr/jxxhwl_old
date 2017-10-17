@@ -4,10 +4,10 @@
     <facet type="web" name="Web">
       <configuration>
         <descriptors>
-          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/WebRoot/WEB-INF/web.xml" />
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/out/artifacts/jxxhwl_war_exploded/WEB-INF/web.xml" />
         </descriptors>
         <webroots>
-          <root url="file://$MODULE_DIR$/WebRoot" relative="/" />
+          <root url="file://$MODULE_DIR$/out/artifacts/jxxhwl_war_exploded" relative="/" />
         </webroots>
       </configuration>
       <facet type="Struts2" name="Struts 2">
@@ -15,6 +15,16 @@
           <propertiesKeys disabled="false" />
         </configuration>
       </facet>
+    </facet>
+    <facet type="web" name="Web2">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/WebRoot/WEB-INF/web.xml" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/WebRoot" relative="/" />
+        </webroots>
+      </configuration>
     </facet>
   </component>
   <component name="NewModuleRootManager" inherit-compiler-output="true">
@@ -24,11 +34,11 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="lib" level="project" />
+    <orderEntry type="library" exported="" name="lib" level="project" />
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://E:/apache-tomcat-8.5.15/lib/jsp-api.jar!/" />
+          <root url="jar://D:/apache-tomcat-6.0.37-windows-x64/apache-tomcat-6.0.37/lib/jsp-api.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -37,7 +47,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://E:/apache-tomcat-8.5.15/lib/servlet-api.jar!/" />
+          <root url="jar://D:/apache-tomcat-6.0.37-windows-x64/apache-tomcat-6.0.37/lib/servlet-api.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
